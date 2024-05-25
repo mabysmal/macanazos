@@ -3,31 +3,51 @@ import Image from "next/image";
 import { attributes, react as HomeContent } from "../content/home.md";
 import { useEffect, useState } from "react";
 
+
 export default function Home(){
   console.log(attributes)
   let {title, cats } = attributes
 
   const images = [
-    "https://images.unsplash.com/photo-1444212477490-ca407925329e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
-    "https://images.unsplash.com/photo-1558929996-da64ba858215?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
-    "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
-    "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
-    "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+    "/Dogs/dogA.avif",
+    "/Dogs/dogB.avif",
+    "/Dogs/dogC.avif",
+    // "https://images.unsplash.com/photo-1444212477490-ca407925329e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
+    // "https://images.unsplash.com/photo-1558929996-da64ba858215?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
+    // "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+    // "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+    // "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
   ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+//////
+const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const showSlide = (index: number) => {
-    setCurrentSlide(index);
+  const handlePrevClick = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % images.length);
+  const handleNextClick = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
-  };
+////////////
+  // const [currentSlide, setCurrentSlide] = useState(0);
+
+  // const showSlide = (index: number) => {
+  //   setCurrentSlide(index);
+  // };
+
+  // const nextSlide = () => {
+  //   setCurrentSlide((prev) => (prev + 1) % images.length);
+  // };
+
+  // const prevSlide = () => {
+  //   setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+  // };
 
 
 
@@ -96,50 +116,19 @@ export default function Home(){
       </header>
 
       <div className="bg-blue w-full h-80">
-        <div className="carrusel">
-          <button id="prev" className="prev">&#8701;</button>
-          <button id="next" className="next">&#8702;</button>
-          <ul>
-            <li>
-              <a href="#"> </a>
-            </li>
-          </ul>
+        <div>
+          <Image
+            className="ml-2"
+            src={images[currentImageIndex]}
+            alt="Perritos tiruriruriru"
+            width={256}
+            height={99}
+          />
         </div>
-        <div className="container mx-auto px-4">
-      
-      
-      <h1 className="text-3xl font-bold text-center my-8">Carrusel de Imágenes</h1>
-      <div className="relative overflow-hidden">
-        {images.map((src, index) => (
-          <div
-            key={index}
-            className={`carousel-slide absolute top-0 left-0 w-full transition-opacity duration-500 ease-in-out ${index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
-          >
-            <a href="https://media1.tenor.com/m/jbpOBNzBN08AAAAC/dog-viralhog.gif" target="_blank" rel="noopener noreferrer">
-              <img
-                src={src}
-                className="block w-full object-cover sm:aspect-[1/1] lg:aspect-[4/3]"
-                alt={`Slide ${index + 1}`}
-              />
-            </a>
-          </div>
-        ))}
-        <button
-          className="carousel-prev absolute top-1/2 left-0 z-20 transform -translate-y-1/2 bg-black text-white p-2"
-          onClick={prevSlide}
-        >
-          ‹
-        </button>
-        <button
-          className="carousel-next absolute top-1/2 right-0 z-20 transform -translate-y-1/2 bg-black text-white p-2"
-          onClick={nextSlide}
-        >
-          ›
-        </button>
-      </div>
-    </div>
-
-
+        <div className="botones de carrusel">
+          <button className="text-5xl" onClick={handlePrevClick}>‹</button>
+          <button className="text-5xl" onClick={handleNextClick}>›</button>
+        </div>
       </div>
 
 
