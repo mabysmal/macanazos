@@ -9,9 +9,14 @@ export default function Home(){
   let {title, cats } = attributes
 
   const images = [
-    "/Dogs/dogA.avif",
-    "/Dogs/dogB.avif",
-    "/Dogs/dogC.avif",
+    "/banner/banner_macanazos.jpg",
+    "/banner/banner_lona.jpg",
+    "/banner/banner_albumgrad.jpg",
+    "/banner/banner_empresarial.jpg",
+    "/banner/banner_tec.jpg",
+    "/banner/banner_comic.jpg",
+
+
     // "https://images.unsplash.com/photo-1444212477490-ca407925329e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
     // "https://images.unsplash.com/photo-1558929996-da64ba858215?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
     // "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
