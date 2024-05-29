@@ -43,27 +43,28 @@ export default function Home() {
   return (
     <main>
       <header>
-        <nav className="flex">
+        <nav className="flex justify-center items-center">
           <div id="menuInicio">
             <ul className={`sidebar fixed top-[0] right-[0] h-screen w-64 bg-white [box-shadow:-10px_0_10px_rgba(0,_0,_0,_0.1)] flex flex-col items-start ${sidebarVisible ? 'flex' : 'hidden'}`}>
               <li className="w-full" onClick={hideSidebar}>
                 <a href="#">
-                  <svg id="closeMobileMenu" xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="3rem" fill="#f68920">
+                  <svg className="m-5"
+                    id="closeMobileMenu" xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="3rem" fill="#f68920">
                     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
                   </svg>
                 </a>
               </li>
-              <li className="w-full"><a className="w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Inicio</a></li>
-              <li className="w-full"><a className="w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Productos</a></li>
-              <li className="w-full"><a className="w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Productos</a></li>
-              <li className="w-full"><a className="w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Reseñas</a></li>
-              <li className="w-full"><a className="w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Ayuda</a></li>
-              <li className="w-full"><a className="w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Contacto</a></li>
+              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Inicio</a></li>
+              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Productos</a></li>
+              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Productos</a></li>
+              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Reseñas</a></li>
+              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Ayuda</a></li>
+              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Contacto</a></li>
             </ul>
-            <ul className="w-full flex justify-end items-center pt-4">
-              <li className="h-full px-8 no-underline items-center flex" onClick={() => setSidebarVisible(!sidebarVisible)}>
+            <ul className="w-full flex justify-centeritems-center m-4">
+              <li className="h-full no-underline items-center flex" onClick={() => setSidebarVisible(!sidebarVisible)}>
                 <a href="#">
-                  <svg id="openMobileMenu" xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="3rem" fill="#f68920">
+                  <svg className="md:hidden" id="openMobileMenu" xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="3rem" fill="#f68920">
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                   </svg>
                 </a>
@@ -77,9 +78,9 @@ export default function Home() {
               
             </ul>
           </div>
-          <div className="a">
+          <div id="Logo-Principal" className="m">
             <Image
-              className="ml-2"
+              className="p-4 md:hidden"
               src="/macanazos-logo-azul-borders.svg"
               alt="Macanazos Logo"
               width={256}
@@ -87,6 +88,7 @@ export default function Home() {
               priority
             />
           </div>
+
         </nav>
       </header>
 
