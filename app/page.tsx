@@ -1,11 +1,9 @@
 'use client';
 import Image from "next/image";
-import { attributes, react as HomeContent } from "../content/home.md";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  console.log(attributes)
-  let { title, cats } = attributes
+
 
   const images = [
     "/banner/banner_macanazos.jpg",
