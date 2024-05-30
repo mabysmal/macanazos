@@ -14,6 +14,7 @@ const config: Config = {
       'black': '#010101',
       'white': '#fffff7',
       'gray': '#C7C7C7',
+      'dark-orange': '#d37316'
 
     },
     extend: {

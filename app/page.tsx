@@ -40,7 +40,24 @@ export default function Home() {
 
   return (
     <main>
-      <header>
+      <header className="md:flex md:flex-col-reverse">
+        <div className="relative md:static md:flex md:bg-orange md:justify-center">
+            <ul id="mobileMenu" className=" absolute top-0 left-0 ml-6 mt-8 md:static md:flex md:m-2 ">
+              <li className="h-full no-underline items-center flex" onClick={() => setSidebarVisible(!sidebarVisible)}>
+                <a href="#">
+                  <svg className="md:hidden" id="openMobileMenu" xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="3rem" fill="#f68920">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                  </svg>
+                </a>
+              </li>
+              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Inicio</a></li>
+              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Productos</a></li>
+              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Productos</a></li>
+              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Reseñas</a></li>
+              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Ayuda</a></li>
+              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Contacto</a></li>   
+            </ul>
+        </div>
         <nav className="flex justify-center items-center">
           <div id="menuInicio">
             <ul className={`sidebar fixed top-[0] right-[0] h-screen w-64 bg-white [box-shadow:-10px_0_10px_rgba(0,_0,_0,_0.1)] flex flex-col items-start ${sidebarVisible ? 'flex' : 'hidden'}`}>
@@ -59,26 +76,10 @@ export default function Home() {
               <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Ayuda</a></li>
               <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Contacto</a></li>
             </ul>
-            <ul className="w-full flex justify-centeritems-center m-4">
-              <li className="h-full no-underline items-center flex" onClick={() => setSidebarVisible(!sidebarVisible)}>
-                <a href="#">
-                  <svg className="md:hidden" id="openMobileMenu" xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="3rem" fill="#f68920">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                  </svg>
-                </a>
-              </li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex" href="a">Inicio</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex" href="a">Productos</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex" href="a">Productos</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex" href="a">Reseñas</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex" href="a">Ayuda</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex" href="a">Contacto</a></li>
-              
-            </ul>
           </div>
-          <div id="Logo-Principal" className="m">
+          <div id="Logo-Principal" className="md:flex ">
             <Image
-              className="p-4 md:hidden"
+              className="m-2"
               src="/macanazos-logo-azul-borders.svg"
               alt="Macanazos Logo"
               width={256}
@@ -88,11 +89,12 @@ export default function Home() {
           </div>
 
         </nav>
+        
       </header>
 
       <div className="bg-blue w-full p-4">
         <div id="carrusel" className="mx-4 flex justify-center items-center">
-          <button className="text-8xl text-orange" onClick={handlePrevClick}>‹</button>
+          <button className="text-8xl text-orange md:hover:text-9xl" onClick={handlePrevClick}>‹</button>
           
            <Image
             className="m-4"
@@ -107,7 +109,7 @@ export default function Home() {
 
             }}
             /> 
-          <button className="text-8xl text-orange" onClick={handleNextClick}>›</button>
+          <button className="text-8xl text-orange md:hover:text-9xl" onClick={handleNextClick}>›</button>
         </div>
       </div>
 
