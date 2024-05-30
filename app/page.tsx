@@ -58,7 +58,7 @@ export default function Home() {
               <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Contacto</a></li>   
             </ul>
         </div>
-        <nav className="flex justify-center items-center">
+        <nav className="flex justify-center items-center ml-10 md:ml-0">
           <div id="menuInicio">
             <ul className={`sidebar fixed top-[0] right-[0] h-screen w-64 bg-white [box-shadow:-10px_0_10px_rgba(0,_0,_0,_0.1)] flex flex-col items-start ${sidebarVisible ? 'flex' : 'hidden'}`}>
               <li className="w-full" onClick={hideSidebar}>
@@ -100,8 +100,8 @@ export default function Home() {
             className="m-4"
             src={images[currentImageIndex]}
             alt="Banner de Productos"
-            width={1080}
-            height={1080}
+            width={540}
+            height={540}
             style={{
               maxWidth: '80%',
               width: '80%',
