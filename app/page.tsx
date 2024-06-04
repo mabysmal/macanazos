@@ -1,5 +1,7 @@
 'use client';
+import Head from "next/head";
 import Image from "next/image";
+import Script from "next/script";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -40,6 +42,7 @@ export default function Home() {
 
   return (
     <main>
+      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <header className="md:flex md:flex-col-reverse">
         <div className="relative md:static md:flex md:bg-orange md:justify-center">
             <ul id="mobileMenu" className=" absolute top-0 left-0 ml-6 mt-8 md:static md:flex md:m-2 ">
