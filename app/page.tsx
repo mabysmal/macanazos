@@ -101,7 +101,7 @@ export default function Home() {
             src={images[currentImageIndex]}
             alt="Banner de Productos"
             width={540}
-            height={540}
+            height={503}
             style={{
               maxWidth: '80%',
               width: '80%',
