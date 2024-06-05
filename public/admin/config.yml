@@ -145,6 +145,7 @@ collections:
     label: "Productos"
     folder: "content/productos/"
     extension: "mdx"
+    format: "frontmatter"
     create: true
     slug: "{{title}}"
     identifier_field: title
