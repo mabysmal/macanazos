@@ -149,7 +149,7 @@ collections:
     slug: "{{title}}"
     identifier_field: title
     summary: "{{description}}"
-    searchFields:
+    fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
