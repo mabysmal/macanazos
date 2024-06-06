@@ -164,7 +164,7 @@ collections:
     fields:
       - { label: "Nuevo Producto", name: "title", widget: "string" }
       - { label: "Breve Descripción del Producto", name: "description", widget: "text" }
-      - { label: "Imagen Principal del Producto", name: "thumbnail", widget: "image", required: false }
+      - { label: "Imagen Principal del Producto", name: "thumbnail", widget: "image" }
       - { label: "Imagenes Secundarias", name: "Imagenes", widget: "image", required: false}
       - { label: "Imagen 3", name: "Imagen3", widget: "image", required: false }
       - { label: "Imagen 4", name: "Imagen4", widget: "image", required: false }
