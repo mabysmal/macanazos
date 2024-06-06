@@ -13,6 +13,9 @@ media_folder: public/images
 public_folder: /images
 publish_mode: editorial_workflow
 locale: 'es'
+site_url: 'https://macanazos.memaxo.art'
+logo_url: '/images/logo-azul-borders.svg'
+
 
 collections:
   - name: "config"
@@ -162,7 +165,7 @@ collections:
       - { label: "Nuevo Producto", name: "title", widget: "string" }
       - { label: "Breve Descripción del Producto", name: "description", widget: "text" }
       - { label: "Imagen Principal del Producto", name: "thumbnail", widget: "image" }
-      - { label: "Imagen 2", name: "Imagen2", widget: "image" }
+      - { label: "Imagenes Secundarias", name: "Imagenes", widget: "image", allow_multiple: true }
       - { label: "Imagen 3", name: "Imagen3", widget: "image" }
       - { label: "Imagen 4", name: "Imagen4", widget: "image" }
       - { label: "Descripción Detallada del Producto", name: "body", widget: "markdown" }
