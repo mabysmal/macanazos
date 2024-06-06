@@ -152,7 +152,8 @@ collections:
     identifier_field: title
     summary: "{{description}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Nuevo Producto", name: "title", widget: "string" }
+      - { label: "Breve Descripción del Producto", name: "description", widget: "text" }
+      - { label: "Imagen de Portada", name: "thumbnail", widget: "image" }
+      - { label: "Imagenes del Producto", name: "ProductPhotosForCarrousel", widget: "image" }
+      - { label: "Descripción Detallada del Producto", name: "body", widget: "markdown" }
