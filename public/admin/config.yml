@@ -163,7 +163,8 @@ collections:
     summary: "{{description}}"
     fields:
       - { label: "Título del Producto", name: "title", widget: "string" }
-      - { label: "Breve Descripción del Producto", name: "description", widget: "text" }
+      - { label: "Breve Descripción del Producto (Texto corto)", name: "description", widget: "text" }
+      - { label: "Medidas del Producto", name: "medidas", widget: "text" }
       - { label: "Imagen Principal del Producto", name: "thumbnail", widget: "image" }
       - { label: "Imagen 2", name: "Imagen2", widget: "image", required: false}
       - { label: "Imagen 3", name: "Imagen3", widget: "image", required: false }
