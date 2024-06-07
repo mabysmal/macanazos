@@ -51,8 +51,8 @@ export default function Home() {
                 </a>
               </li>
               <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Inicio</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Productos</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Productos</a></li>
+              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Catálogo</a></li>
+              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">a</a></li>
               <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Reseñas</a></li>
               <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Ayuda</a></li>
               <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Contacto</a></li>   
