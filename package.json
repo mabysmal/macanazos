@@ -13,12 +13,15 @@
     "@babel/core": "^7.24.5",
     "@babel/preset-react": "^7.24.1",
     "frontmatter-markdown-loader": "^3.7.0",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.16.1",
+    "@types/js-yaml": "^4.0.9",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

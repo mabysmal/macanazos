@@ -1,119 +1,68 @@
-'use client';
+import fs from "fs";
+import matter from "gray-matter";
+import path from "path";
+import yaml from "js-yaml";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-
+import Carrousel from '@/components/carrousel';
+import HamburgerMenu from '@/components/hamburger-menu';
 
 export default function Home() {
+  // catalog
 
+  // const productsDirectory = path.join(process.cwd(), "content/products");
 
-  const images = [
-    "/banner/banner_macanazos.jpg",
-    "/banner/banner_lona.jpg",
-    "/banner/banner_ablumgrad.jpg",
-    "/banner/banner_empresarial.jpg",
-    "/banner/banner_tec.jpg",
-    "/banner/banner_comic.jpg",
-  ];
+  // type ProductContent = {
+  //   readonly title: string;
+  //   readonly description: string;
+  //   readonly fullPath: string;
+  // };
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // let productCache: ProductContent[];
 
-  const handlePrevClick = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
+  // function fetchPostContent(): ProductContent[] {
+  //   if (productCache) {
+  //     return productCache;
+  //   }
+  //   // Get file names under /posts
+  //   const fileNames = fs.readdirSync(productsDirectory);
+  //   const allPostsData = fileNames
+  //     .filter((it) => it.endsWith(".mdx"))
+  //     .map((fileName) => {
+  //       // Read markdown file as string
+  //       const fullPath = path.join(productsDirectory, fileName);
+  //       const fileContents = fs.readFileSync(fullPath, "utf8");
 
-  const handleNextClick = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  //       // Use gray-matter to parse the post metadata section
+  //       const matterResult = matter(fileContents, {
+  //         engines: {
+  //           yaml: (s) => yaml.load(s, { schema: yaml.JSON_SCHEMA }) as object,
+  //         },
+  //       });
+  //       const matterData = matterResult.data as {
+  //         title: string;
+  //         description: string;
+  //         fullPath: string;
+  //       };
+  //       matterData.fullPath = fullPath;
 
-  const [sidebarVisible, setSidebarVisible] = useState(false);
+  //       return matterData;
+  //     });
 
-  const showSidebar = () => {
-    setSidebarVisible(true);
-  };
+  //     return allPostsData;
+  // }
 
-  const hideSidebar = () => {
-    setSidebarVisible(false);
-  };
+  // console.log(
+  //   fetchPostContent()
+  // )
+
+  // end catalog
 
   return (
     <main>
-      <header className="md:flex md:flex-col-reverse">
-        <div className="relative md:static md:flex md:bg-orange md:justify-center">
-            <ul id="mobileMenu" className=" absolute top-0 left-0 ml-6 mt-8 md:static md:flex md:m-2 ">
-              <li className="h-full no-underline items-center flex" onClick={() => setSidebarVisible(!sidebarVisible)}>
-                <a href="#">
-                  <svg className="md:hidden" id="openMobileMenu" xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="3rem" fill="#f68920">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                  </svg>
-                </a>
-              </li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Inicio</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Catálogo</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">a</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Reseñas</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Ayuda</a></li>
-              <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Contacto</a></li>   
-            </ul>
-        </div>
-        <nav className="flex justify-center items-center ml-10 md:ml-0">
-          <div id="menuInicio">
-            <ul className={`sidebar fixed top-[0] right-[0] h-screen w-64 bg-white [box-shadow:-10px_0_10px_rgba(0,_0,_0,_0.1)] flex flex-col items-start ${sidebarVisible ? 'flex' : 'hidden'}`}>
-              <li className="w-full" onClick={hideSidebar}>
-                <a href="#">
-                  <svg className="m-5"
-                    id="closeMobileMenu" xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="3rem" fill="#f68920">
-                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                  </svg>
-                </a>
-              </li>
-              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Inicio</a></li>
-              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Catálogo</a></li>
-              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">a</a></li>
-              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Reseñas</a></li>
-              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Ayuda</a></li>
-              <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Contacto</a></li>
-            </ul>
-          </div>
-          <div id="Logo-Principal" className="md:flex ">
-            <Image
-              className="m-2"
-              src="/macanazos-logo-azul-borders.svg"
-              alt="Macanazos Logo"
-              width={256}
-              height={99}
-              priority
-            />
-          </div>
-
-        </nav>
-        
-      </header>
-
-      <div className="bg-blue w-full p-4">
-        <div id="carrusel" className="mx-4 flex justify-center items-center">
-          <button className="text-8xl text-orange md:hover:text-9xl" onClick={handlePrevClick}>‹</button>
-          
-           <Image
-            className="m-4"
-            src={images[currentImageIndex]}
-            alt="Banner de Productos"
-            width={540}
-            height={503}
-            style={{
-              maxWidth: '80%',
-              width: '80%',
-              height: 'auto',
-
-            }}
-            /> 
-          <button className="text-8xl text-orange md:hover:text-9xl" onClick={handleNextClick}>›</button>
-        </div>
+      <HamburgerMenu />
+      <div id="ContenedorCarrusel" className="bg-blue w-full p-4">
+        <Carrousel />
       </div>
-
       <div className="bg-orange w-full h-96 mt-12">
         {/* AQUI VA UNA LISTA DE PRODUCTOS, LOS MAS VENDIDOS */}
         <span className="text-white">Aqui va una lista de productos, los mas vendidos</span>
@@ -131,11 +80,9 @@ export default function Home() {
               alt="Macanazos Logo"
             ></img>
           </div>
-          <div className="Contenedor de contactos">
-          </div>
+          <div className="Contenedor de contactos"></div>
         </div>
       </footer>
     </main>
   );
 }
-
