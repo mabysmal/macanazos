@@ -37,7 +37,7 @@ const Carrousel = () => {
         width={540}
         height={503}
         style={{
-          maxWidth: '80%',
+          maxWidth: '1024px',
           width: '80%',
           height: 'auto',
         }}

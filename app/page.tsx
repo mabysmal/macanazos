@@ -74,26 +74,9 @@ export default function Home() {
       </div>
       <div className="bg-orange w-full h-96 mt-12">
         {/* AQUI VA UNA LISTA DE PRODUCTOS, LOS MAS VENDIDOS */}
-        <span className="text-white">Aqui va una lista de productos, los mas vendidos</span>
-        <div>
-          <h3>Producto 1</h3>
-          <p>Descripcion del producto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero amet odit culpa adipisci vitae dolores! Explicabo accusantium nobis, repellendus iusto ex, quo quidem dignissimos quae voluptatem libero saepe iste ab.</p>
-          <h4>Desde $XX.00</h4>
-          <span>Products List</span>
-          {fetchProductContent().map((product) => (
-            <div> 
-              <h3>{product.title}</h3>
-              <p>{product.description}</p>
-              <h4>{product.medidas}</h4>
-              <div>
-                <img src={product.thumbnail}
-                 alt="Product Image" 
-                 width={100}
-                 height={100}
-                 />
-              </div>
-            </div>
-          ))}
+        <div className="ContenedorProdsMasVendidos">
+          <h3> Te podrían interesar...</h3>
+          
         </div>
       </div>
       <footer>
