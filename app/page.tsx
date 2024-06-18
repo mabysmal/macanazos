@@ -16,11 +16,11 @@ export default function Home() {
     readonly description: string;
     readonly medidas: string;
     readonly thumbnail: string ;
-    readonly Imagen2: string;
-    readonly Imagen3: string;
-    readonly Imagen4: string;
-    readonly Imagen5: string;
-    readonly Imagen6: string;
+    readonly Imagen2?: string;
+    readonly Imagen3?: string;
+    readonly Imagen4?: string;
+    readonly Imagen5?: string;
+    readonly Imagen6?: string;
     readonly fullPath: string;
   };
 
