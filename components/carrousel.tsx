@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from "react";
 import Image from 'next/image';
-////
+/////
 const Carrousel = () => {
   const images = [
     "/banner/banner_gracias.jpg",
