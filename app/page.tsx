@@ -69,13 +69,27 @@ export default function Home() {
     <main>
 
       <HamburgerMenu />
-      <div id="ContenedorCarrusel" className="bg-blue w-full p-4">
-        <Carrousel />
-      </div>
+
+      <Carrousel />
+
       <div className="bg-orange w-full h-96 mt-12">
         {/* AQUI VA UNA LISTA DE PRODUCTOS, LOS MAS VENDIDOS */}
         <div className="ContenedorProdsMasVendidos">
           <h3> Te podrían interesar...</h3>
+          <div className="Contenedor de productos">
+            <ul>
+              <li>
+                <Image
+                  src="/productoMasVendido1.jpg"
+                  alt="Macanazo Escolar"
+                  width={200}
+                  height={200}
+                ></Image>
+                <h3></h3>
+              </li>
+            </ul>
+          </div>
+
           
         </div>
       </div>

@@ -1,9 +1,10 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from 'next/image';
 
 const Carrousel = () => {
   const images = [
+    "/banner/banner_gracias.jpg",
     "/banner/banner_macanazos.jpg",
     "/banner/banner_lona.jpg",
     "/banner/banner_ablumgrad.jpg",
@@ -13,37 +14,86 @@ const Carrousel = () => {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imagesPerPage, setImagesPerPage] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setImagesPerPage(1);
+      } else if (window.innerWidth < 1024) {
+        setImagesPerPage(2);
+      } else {
+        setImagesPerPage(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handlePrevClick = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      (prevIndex - imagesPerPage + images.length) % images.length
     );
   };
 
   const handleNextClick = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      (prevIndex + imagesPerPage) % images.length
     );
   };
 
-  return (
-    <div id="carrusel" className="mx-4 flex justify-center items-center">
-      <button className="text-8xl text-orange md:hover:text-9xl" onClick={handlePrevClick}>‹</button>
-      
-      <Image
-        className="m-4"
-        src={images[currentImageIndex]}
-        alt="Banner de Productos"
-        width={540}
-        height={503}
-        style={{
-          maxWidth: '1024px',
-          width: '80%',
-          height: 'auto',
-        }}
-      /> 
+  const getDisplayedImages = () => {
+    const endIndex = (currentImageIndex + imagesPerPage) % images.length;
+    if (endIndex > currentImageIndex || endIndex === 0) {
+      return images.slice(currentImageIndex, currentImageIndex + imagesPerPage);
+    } else {
+      return [
+        ...images.slice(currentImageIndex, images.length),
+        ...images.slice(0, endIndex),
+      ];
+    }
+  };
 
-      <button className="text-8xl text-orange md:hover:text-9xl" onClick={handleNextClick}>›</button>
+  const displayedImages = getDisplayedImages();
+
+  return (
+    // <div id="ContenedorCarrusel" className="bg-blue w-full p-4 flex flex-row md:max-w-3xl">
+    <div id="carrusel" className="bg-blue mx-4 flex justify-center items-center max-w-full overflow-hidden">
+      <button
+        className="text-8xl text-orange md:hover:text-9xl md:hover:[transition:all_0.5s]"
+        onClick={handlePrevClick}
+      >
+        ‹
+      </button>
+
+      <div className="flex flex-row justify-center items-center w-full">
+        {displayedImages.map((image, index) => (
+          <Image
+            key={index}
+            className="m-4 max-w-full"
+            src={image}
+            alt="Banner de Productos"
+            width={540}
+            height={503}
+            style={{
+              width: `${100 / imagesPerPage}%`, // Ajuste dinámico del ancho basado en las imágenes por página
+              height: 'auto',
+            }}
+          />
+        ))}
+      </div>
+
+      <button
+        className="text-8xl text-orange md:hover:text-9xl md:hover:[transition:all_0.5s]"
+        onClick={handleNextClick}
+      >
+        ›
+      </button>
     </div>
   );
 };
