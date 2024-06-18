@@ -12,6 +12,7 @@
   "dependencies": {
     "@babel/core": "^7.24.5",
     "@babel/preset-react": "^7.24.1",
+    "framer-motion": "^11.2.10",
     "frontmatter-markdown-loader": "^3.7.0",
     "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.0",
