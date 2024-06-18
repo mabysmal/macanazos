@@ -62,16 +62,17 @@ const Carrousel = () => {
   const displayedImages = getDisplayedImages();
 
   return (
-    // <div id="ContenedorCarrusel" className="bg-blue w-full p-4 flex flex-row md:max-w-3xl">
-    <div id="carrusel" className="bg-blue mx-4 flex justify-center items-center max-w-full overflow-hidden">
+    <div id="carrusel" className=" flex justify-center items-center max-w-full overflow-hidden">
+     
+
+      <div className="flex flex-row justify-center items-center" style={{ width: '80%' }}>
       <button
-        className="text-8xl text-orange md:hover:text-9xl md:hover:[transition:all_0.5s]"
+        className="text-8xl text-orange flex md:hover:text-9xl md:hover:[transition:all_0.5s]"
         onClick={handlePrevClick}
       >
         ‹
       </button>
 
-      <div className="flex flex-row justify-center items-center w-full">
         {displayedImages.map((image, index) => (
           <Image
             key={index}
@@ -81,19 +82,22 @@ const Carrousel = () => {
             width={540}
             height={503}
             style={{
-              width: `${100 / imagesPerPage}%`, // Ajuste dinámico del ancho basado en las imágenes por página
+              width: `${100 / imagesPerPage}%`,
               height: 'auto',
             }}
           />
         ))}
-      </div>
+        
 
       <button
-        className="text-8xl text-orange md:hover:text-9xl md:hover:[transition:all_0.5s]"
+        className="text-8xl text-orange flex md:hover:text-9xl md:hover:[transition:all_0.5s]"
         onClick={handleNextClick}
       >
         ›
       </button>
+      </div>
+
+      
     </div>
   );
 };

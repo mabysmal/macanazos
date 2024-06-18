@@ -70,7 +70,11 @@ export default function Home() {
 
       <HamburgerMenu />
 
-      <Carrousel />
+      <div className="bg-blue">
+        <Carrousel />
+      </div>
+
+      
 
       <div className="bg-orange w-full h-96 mt-12">
         {/* AQUI VA UNA LISTA DE PRODUCTOS, LOS MAS VENDIDOS */}
