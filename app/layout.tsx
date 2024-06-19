@@ -18,6 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
+      
+      {/* <style>
+        @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      </style> */}
+
+
       <body className={inter.className}>{children}</body>
     </html>
   );

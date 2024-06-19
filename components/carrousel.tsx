@@ -76,7 +76,7 @@ const Carrousel = () => {
         {displayedImages.map((image, index) => (
           <Image
             key={index}
-            className="m-4 max-w-full"
+            className="m-4 max-w-full rounded-2xl"
             src={image}
             alt="Banner de Productos"
             width={540}
