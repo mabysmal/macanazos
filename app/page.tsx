@@ -67,11 +67,11 @@ export default function Home() {
   // end catalog
 
   return (
-    <main>
+    <main className="">
 
       <HamburgerMenu />
 
-      <div className="bg-blue">
+      <div className="bg-blue py-4">
         <Carrousel />
       </div>
 

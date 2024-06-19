@@ -76,7 +76,7 @@ const Carrousel = () => {
         {displayedImages.map((image, index) => (
           <Image
             key={index}
-            className="m-4 max-w-full rounded-2xl"
+            className="m-4 rounded-2xl max-w-xs transition duration-300 ease-in-out hover:scale-110"
             src={image}
             alt="Banner de Productos"
             width={540}
@@ -90,7 +90,7 @@ const Carrousel = () => {
         
 
       <button
-        className="text-8xl text-orange flex md:hover:text-9xl md:hover:[transition:all_0.5s]"
+        className="text-8xl text-orange flex md:hover:text-9xl md:hover:[transition:all_0.5s] "
         onClick={handleNextClick}
       >
         ›
