@@ -24,12 +24,12 @@ const HamburgerMenu = () => {
                         </svg>
                     </a>
                 </li>
-                <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Inicio</a></li>
-                <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Catálogo</a></li>
-                <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">a</a></li>
-                <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Reseñas</a></li>
-                <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Ayuda</a></li>
-                <li><a className="h-full px-8 no-underline hidden items-center hover:bg-gray md:flex md:text-white md:hover:bg-dark-orange md:hover:text-gray" href="a">Contacto</a></li>   
+                <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="a">Inicio</a></li>
+                <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="a">Catálogo</a></li>
+                <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="a">a</a></li>
+                <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="a">Reseñas</a></li>
+                <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="a">Ayuda</a></li>
+                <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="a">Contacto</a></li>   
             </ul>
         </div>
         <nav className="flex justify-center items-center ml-10 md:ml-0">
@@ -43,12 +43,12 @@ const HamburgerMenu = () => {
                             </svg>
                         </a>
                     </li>
-                    <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Inicio</a></li>
-                    <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Catálogo</a></li>
-                    <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">a</a></li>
-                    <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Reseñas</a></li>
-                    <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Ayuda</a></li>
-                    <li className="w-full"><a className="text-2xl mb-4 w-full px-8 no-underline flex items-center hover:bg-gray" href="a">Contacto</a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">Inicio</a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">Catálogo</a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">a</a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">Reseñas</a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">Ayuda</a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">Contacto</a></li>
                 </ul>
             </div>
             <div id="Logo-Principal" className="md:flex">

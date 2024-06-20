@@ -67,7 +67,7 @@ const Carrousel = () => {
 
       <div className="flex flex-row justify-center items-center" style={{ width: '80%' }}>
       <button
-        className="text-8xl text-orange flex md:hover:text-9xl md:hover:[transition:all_0.5s]"
+        className="text-7xl text-orange flex md:hover:text-8xl md:hover:[transition:all_0.5s]"
         onClick={handlePrevClick}
       >
         ‹
@@ -90,7 +90,7 @@ const Carrousel = () => {
         
 
       <button
-        className="text-8xl text-orange flex md:hover:text-9xl md:hover:[transition:all_0.5s] "
+        className="text-7xl text-orange flex md:hover:text-8xl md:hover:[transition:all_0.5s] "
         onClick={handleNextClick}
       >
         ›

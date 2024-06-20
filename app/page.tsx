@@ -79,8 +79,7 @@ export default function Home() {
 
       <div className="bg-orange w-full mt-4 flex flex-col">
         {/* AQUI VA UNA LISTA DE PRODUCTOS, LOS MAS VENDIDOS */}
-        <h2 className="font-font-bebas text-center text-white text-5xl no-underline flex m-2 mb-4 ml-6 mt-6 justify-around">
-          Te podrían interesar...
+        <h2 className="font-font-bebas text-center text-white text-5xl no-underline flex m-2 mb-4 ml-6 mt-6 justify-around">Te podrían interesar:
         </h2>
         <ul className="flex flex-row justify-center  mb-8 flex-wrap align-center items-center">
           <li className="mb-6 overflow-hidden max-w-xs transition duration-300 ease-in-out hover:scale-110">
@@ -134,12 +133,16 @@ export default function Home() {
         </ul>
       </div>
       <footer>
-        <div className="bg-black w-full h-60 mt-12">
-          <div className="Contenedor de imagen">
-            <img className="h-auto w-1/3"
+        <div className="bg-black flex mt-4">
+          <div className="Contenedor de imagen ">
+            <Image
+              className=""
               src="/imagotipo macanazos blanco.svg"
-              alt="Macanazos Logo"
-            ></img>
+              alt="a"
+              width={256}
+              height={256}
+              style={{ width: '90%', height: 'auto' }}
+            ></Image>
           </div>
           <div className="Contenedor de contactos"></div>
         </div>
