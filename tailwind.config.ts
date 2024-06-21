@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { Bebas_Neue } from "next/font/google";
 
 const config: Config = {
   content: [

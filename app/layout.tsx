@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const bebasNeue = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bebas",
+});
 
 export const metadata: Metadata = {
   title: "Macanazos",
-  description: "Caricatura social para toda ocasión",
+  description: "Caricatura social para toda ocasión.",
 };
 
 export default function RootLayout({
@@ -16,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en"className={bebasNeue.className}>
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       
       {/* <style>
@@ -24,7 +28,7 @@ export default function RootLayout({
       </style> */}
 
 
-      <body className={inter.className}>{children}</body>
+      <body className={bebasNeue.className}>{children}</body>
     </html>
   );
 }

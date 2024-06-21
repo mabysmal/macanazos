@@ -7,6 +7,7 @@ import Carrousel from '@/components/carrousel';
 import HamburgerMenu from '@/components/hamburger-menu';
 import MapComponent from "@/components/map";
 import Contactos from "@/components/contactos";
+import { bebasNeue } from "./fonts";
 
 // import ('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -80,9 +81,9 @@ export default function Home() {
 
       
 
-      <div className="bg-orange w-full mt-4 flex flex-col">
+      <div className=" bg-orange w-full mt-4 flex flex-col">
         {/* AQUI VA UNA LISTA DE PRODUCTOS, LOS MAS VENDIDOS */}
-        <h2 className="font-font-bebas text-center text-white text-5xl no-underline flex m-2 mb-4 ml-6 mt-6 justify-around">Te podrían interesar:
+        <h2 className="text-center text-white text-5xl no-underline flex m-2 mb-4 ml-6 mt-6 justify-around">Te podrían interesar:
         </h2>
         <ul className="flex flex-row justify-center  mb-8 flex-wrap align-center items-center">
           <li className="mb-6 overflow-hidden max-w-xs transition duration-300 ease-in-out hover:scale-110">
@@ -95,7 +96,7 @@ export default function Home() {
               height={256}
               style={{ width: '90%', height: 'auto' }}
             ></Image>
-            <h3 className="font-montserrat font-semibold text-white text-base md:text-lg lg:text-xl flex justify-around">Macanazos Escolares</h3>
+            <h3 className=" text-white text-base md:text-2xl lg:text-3xl flex justify-around">Macanazos Escolares</h3>
           </li>
           <li className="mb-6 overflow-hidden max-w-xs transition duration-300 ease-in-out hover:scale-110">
             <a href="a"></a>
@@ -107,7 +108,7 @@ export default function Home() {
               height={256}
               style={{ width: '90%', height: 'auto' }}
             ></Image>
-            <h3 className="font-montserrat font-semibold  text-white text-base md:text-lg lg:text-xl flex justify-around">Macanazos Caracterizados</h3>
+            <h3 className=" text-white text-base md:text-2xl lg:text-3xl flex justify-around">Macanazos Caracterizados</h3>
           </li>
           <li className="mb-6 overflow-hidden max-w-xs transition duration-300 ease-in-out hover:scale-110">
             <a href="a"></a>
@@ -119,7 +120,7 @@ export default function Home() {
               height={256}
               style={{ width: '90%', height: 'auto' }}
             ></Image>
-            <h3 className="font-montserrat font-semibold text-white text-base md:text-lg lg:text-xl flex justify-around">Poster Grupal</h3>
+            <h3 className=" text-white text-base md:text-2xl lg:text-3xl flex justify-around">Poster Grupal</h3>
           </li>
           <li className="mb-6 overflow-hidden max-w-xs transition duration-300 ease-in-out hover:scale-110">
             <a href="a"></a>
@@ -131,7 +132,7 @@ export default function Home() {
               height={256}
               style={{ width: '90%', height: 'auto' }}
             ></Image>
-            <h3 className=" font-montserrat font-semibold text-white text-base md:text-lg lg:text-xl flex justify-around">Macanazos de Empresas</h3>
+            <h3 className=" text-white text-base md:text-2xl lg:text-3xl flex justify-around">Macanazos de Empresas</h3>
           </li>
         </ul>
       </div>
