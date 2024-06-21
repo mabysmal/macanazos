@@ -5,6 +5,9 @@ import yaml from "js-yaml";
 import Image from "next/image";
 import Carrousel from '@/components/carrousel';
 import HamburgerMenu from '@/components/hamburger-menu';
+import MapComponent from "@/components/map";
+import Contactos from "@/components/contactos";
+
 // import ('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 export default function Home() {
@@ -132,20 +135,29 @@ export default function Home() {
           </li>
         </ul>
       </div>
-      <footer>
-        <div className="bg-black flex mt-4">
-          <div className="Contenedor de imagen ">
+      <footer className="bg-black justify-center pb-10 pt-10 mt-4">
+        <div className="bg-black flex mt-4 grow-2 pb-10">
+
+          <div className="Contenedor de imagen flex items-center justify-center sm:w-[50%]">
             <Image
               className=""
               src="/imagotipo macanazos blanco.svg"
-              alt="a"
+              alt="Imagotipo Macanazos"
               width={256}
               height={256}
-              style={{ width: '90%', height: 'auto' }}
+              style={{ width: '100%', height: 'auto' }}
             ></Image>
           </div>
-          <div className="Contenedor de contactos"></div>
+
+          <Contactos />
+
+          <div className="Contenedor de mapa md:flex hidden md:visible md:w-[30%]">
+            <MapComponent />
+          </div>
+          
         </div>
+        <span className="text-gray text-center flex align-center justify-evenly">© 2024 Macanazos</span>
+        <a className="text-blue text-center flex align-center justify-evenly" href="https://mabs.dev"> By mabs.dev</a>
       </footer>
     </main>
   );

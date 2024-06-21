@@ -43,12 +43,12 @@ const HamburgerMenu = () => {
                             </svg>
                         </a>
                     </li>
-                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">Inicio</a></li>
-                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">Catálogo</a></li>
-                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">a</a></li>
-                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">Reseñas</a></li>
-                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">Ayuda</a></li>
-                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-2xl hover:bg-blue hover:text-white" href="a">Contacto</a></li>
+                    <li className="w-full"><a className=" mb-6 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="a">Inicio</a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="a">Catálogo</a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="a">a</a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="a">Reseñas</a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="a">Ayuda</a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="a">Contacto</a></li>
                 </ul>
             </div>
             <div id="Logo-Principal" className="md:flex">
