@@ -138,7 +138,7 @@ export default function Home() {
       <footer className="bg-black justify-center pb-10 pt-10 mt-4">
         <div className="bg-black flex mt-4 grow-2 pb-10">
 
-          <div className="Contenedor de imagen flex items-center justify-center sm:w-[50%]">
+          <div className="Contenedor de imagen flex items-center justify-center sm:w-[30%]">
             <Image
               className=""
               src="/imagotipo macanazos blanco.svg"
@@ -148,10 +148,9 @@ export default function Home() {
               style={{ width: '100%', height: 'auto' }}
             ></Image>
           </div>
-
           <Contactos />
 
-          <div className="Contenedor de mapa md:flex hidden md:visible md:w-[30%]">
+          <div className="Contenedor de mapa md:flex hidden md:visible md:w-[30%] justify-center items-center align-center">
             <MapComponent />
           </div>
           
