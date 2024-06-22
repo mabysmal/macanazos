@@ -156,8 +156,8 @@ export default function Home() {
           </div>
           
         </div>
-        <span className="text-gray text-center flex align-center justify-evenly">© 2024 Macanazos</span>
-        <a className="text-blue text-center flex align-center justify-evenly" href="https://mabs.dev"> By mabs.dev</a>
+        <span className="text-gray text-xl text-center flex align-center justify-evenly">© 2024 Macanazos</span>
+        <a className="text-blue text-center flex align-center justify-evenly" href="https://mabs.dev"> website by mabs.dev</a>
       </footer>
     </main>
   );
