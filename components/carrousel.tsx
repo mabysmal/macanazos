@@ -5,7 +5,6 @@ import Image from 'next/image';
 const Carrousel = () => {
   const images = [
     "/banner/banner_gracias.jpg",
-    "/banner/banner_macanazos.jpg",
     "/banner/banner_lona.jpg",
     "/banner/banner_ablumgrad.jpg",
     "/banner/banner_empresarial.jpg",
