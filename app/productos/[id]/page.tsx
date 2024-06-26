@@ -5,6 +5,7 @@ import yaml from "js-yaml";
 import Image from "next/image";
 import HamburgerMenu from "@/components/hamburger-menu";
 import { getMatter, readContent, readMatterData } from "@/utilities/fileReading";
+import ProductCarousel from "@/components/productCarrousel";
 
 
 export default function ProductPage({params}: {params: {id: string}}) {
@@ -21,7 +22,7 @@ export default function ProductPage({params}: {params: {id: string}}) {
         productData.Imagen4,
         productData.Imagen5,
         productData.Imagen6
-    ]
+    ].filter(image => image !== undefined); // Filtra los valores undefined
 
 
 
@@ -29,17 +30,11 @@ export default function ProductPage({params}: {params: {id: string}}) {
         <main>
             <HamburgerMenu />
             <span>testing</span>
-            <div className="flex flex-col md:flex-row md:justify-center md:items-start">
-                <div className="w-full md:w-2/5">
-                    <Image
-                        src={productData.thumbnail}
-                        alt="a"
-                        width={256}
-                        height={256}
-                        style={{ width: '90%', height: 'auto' }}
-                    />
+            <div id="contenedor de producto" className="flex flex-col md:flex-row md:justify-center md:items-start">
+                <div id="contenedor de imagenes" className="w-full md:w-2/5">
+                    <ProductCarousel images={productImages} />
                 </div>
-                <div className="w-full md:w-2/5">
+                <div id="contenedor de texto" className="w-full md:w-2/5">
                     <h1>{params.id}</h1>
                     <p>{productContent}</p>
                 </div>
