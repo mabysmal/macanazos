@@ -13,31 +13,37 @@ export default function ProductPage({params}: {params: {id: string}}) {
 
     const productData= readMatterData(params.id+'.mdx');
     const productContent = readContent(params.id+'.mdx');
-    
+
+    let productImages = [
+        productData.thumbnail,
+        productData.Imagen2,
+        productData.Imagen3,
+        productData.Imagen4,
+        productData.Imagen5,
+        productData.Imagen6
+    ]
+
+
 
     return(
         <main>
             <HamburgerMenu />
             <span>testing</span>
-            <div id="contenedor de imagenes y textos de productos
-            tailwindaqui">
-                <div id="contenedor de imagenes">
-                <Image
-                    className="a "
-                    src={productData.thumbnail}
-                    alt="a"
-                    width={256}
-                    height={256}
-                    style={{ width: '90%', height: 'auto' }}
-                ></Image>
+            <div className="flex flex-col md:flex-row md:justify-center md:items-start">
+                <div className="w-full md:w-2/5">
+                    <Image
+                        src={productData.thumbnail}
+                        alt="a"
+                        width={256}
+                        height={256}
+                        style={{ width: '90%', height: 'auto' }}
+                    />
                 </div>
-                <div id="contenedor de textos">
+                <div className="w-full md:w-2/5">
                     <h1>{params.id}</h1>
                     <p>{productContent}</p>
                 </div>
             </div>
         </main>
-    
-    )
-
+    );
 }

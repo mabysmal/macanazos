@@ -52,6 +52,11 @@ export function readMatterData(fileName: string){
       description: string;
       medidas: string;
       thumbnail: string;
+      Imagen2?: string;
+      Imagen3?: string;
+      Imagen4?: string;
+      Imagen5?: string;
+      Imagen6?: string;
       fullPath: string;
     };
     const fullPath = path.join(productsDirectory, fileName);
