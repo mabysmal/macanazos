@@ -72,14 +72,23 @@ export default function Home(){
             <HamburgerMenu />
 
             <span> productos: </span>
-            {/* {productCache.map((product) => (
 
-                <li key={product.title}>
-                    <a href={product.fullPath}>
-                      <Image src={product.thumbnail} alt={product.title} width={200} height={200} />
+            {fetchProductContent().map((product) => (
+                <div id="cartas de productos" key={product.fullPath}>
+                    <a href={product.fullPath} >
+                      <Image
+                        src={product.thumbnail}
+                        alt={product.title}
+                        width={256}
+                        height={256}
+                        className="object-cover" 
+                      />
+                      <h1>{product.title}</h1>
+                      <p>{product.description}</p>
                     </a>
-                </li>
-            ))} */}
+                    
+                </div>
+            ))}
 
         </main>
     )

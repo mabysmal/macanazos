@@ -29,14 +29,14 @@ const ProductCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
           className="object-cover w-full h-auto"
         />
         <div className="flex justify-center items-center mt-2 md:hidden">
-          <button onClick={handlePrevious} className="px-2 py-1 bg-gray-200 rounded">{"<"}</button>
-          <span className="mx-2">{currentIndex + 1} / {images.length}</span>
-          <button onClick={handleNext} className="px-2 py-1 bg-gray-200 rounded">{">"}</button>
+          <button onClick={handlePrevious} className="px-2 py-1 bg-gray-200 rounded text-5xl text-orange">{"<"}</button>
+          <span className="mx-2 text-2xl text-orange">{currentIndex + 1} / {images.length}</span>
+          <button onClick={handleNext} className="px-2 py-1 bg-gray-200 rounded text-5xl text-orange">{">"}</button>
         </div>
       </div>
-      <div className="hidden md:flex md:flex-col md:w-2/5 md:ml-4">
+      <div className="hidden order--1 md:flex md:flex-col md:w-2/5 md:ml-4">
         {images.map((image: string, index: number) => (
-          <div key={index} className={`cursor-pointer mb-2 ${currentIndex === index ? 'border-2 border-blue-500' : ''}`} onClick={() => setCurrentIndex(index)}>
+          <div key={index} className={`cursor-pointer mb-2 ${currentIndex === index ? 'border-2 border-orange' : ''}`} onClick={() => setCurrentIndex(index)}>
             <Image
               src={image}
               alt={`Thumbnail ${index + 1}`}
