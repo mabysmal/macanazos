@@ -64,7 +64,7 @@ export function readContent(fileName: string):string{
     return content;
 }
 
-export function fetchAllProductData(): ProductContent[] {
+export function getAllFrontMatter(): ProductContent[] {
   if (productCache) {
     return productCache;
   }
