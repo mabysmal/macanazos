@@ -36,13 +36,6 @@ export function getMatter (fileName: string){
 
     return matterResult
 }
-// Before I thought you needed the raw file text, but no
-//matterData, below, contains both the frontmatter (called data) and the markdown (called content)
-
-// and then have a new functionwhich gets the content instead ofthe data
-// readMatterData gets the data already.
-// and clearly some renaming could help simlify things!
-
 
 export function readMatterData(fileName: string){
     const matterResult = getMatter(fileName);
