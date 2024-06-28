@@ -8,6 +8,10 @@ import { getMatter, readContent, readMatterData } from "@/utilities/fileReading"
 import ProductCarousel from "@/components/productCarrousel";
 import MapComponent from "@/components/map";
 import Contactos from "@/components/contactos";
+import ReactMarkdown from "react-markdown";
+import './styles.css'
+import Head from 'next/head';
+
 
 
 export default function ProductPage({params}: {params: {id: string}}) {
@@ -30,15 +34,18 @@ export default function ProductPage({params}: {params: {id: string}}) {
 
     return(
         <main>
+          <Head>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet" />
+          </Head>
+          
             <HamburgerMenu />
-            <span>testing</span>
-            <div id="contenedor de producto" className="bg-blue flex flex-col md:flex-row md:justify-center md:items-start">
-                <div id="contenedor de imagenes" className="w-full md:w-2/5">
+            <div id="contenedor de producto" className=" pt-16 pb-8 bg-blue flex flex-col md:flex-row md:justify-center md:items-start">
+                <div id="contenedor de imagenes" className="flex-col w-full md:w-2/5">
                     <ProductCarousel images={productImages} />
                 </div>
                 <div id="contenedor de texto" className="w-full md:w-2/5">
-                    <h1>{params.id}</h1>
-                    <p>{productContent}</p>
+                    <h1 className="text-5xl pt-5 px-5 text-center md:text-left">{params.id}</h1>
+                    <ReactMarkdown className="markdown-body" >{productContent}</ReactMarkdown>
                 </div>
             </div>
 
