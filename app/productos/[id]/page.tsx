@@ -48,6 +48,10 @@ export default function ProductPage({params}: {params: {id: string}}) {
                 <div id="contenedor de texto" className="w-full md:w-2/5">
                     <h1 className="text-5xl pt-5 px-5 text-center md:text-left">{params.id}</h1>
                     <ReactMarkdown className="markdown-body" >{productContent}</ReactMarkdown>
+                    <div className="a">
+                      <button>Whatsapp</button>
+                    </div>
+
                 </div>
             </div>
 
