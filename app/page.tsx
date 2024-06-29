@@ -74,6 +74,8 @@ export default function Home() {
 
       <HamburgerMenu />
 
+      
+
       <div className="bg-blue py-4">
         <Carrousel />
       </div>
@@ -155,8 +157,8 @@ export default function Home() {
           </div>
           
         </div>
-        <span className="text-gray text-xl text-center flex align-center justify-evenly">© 2024 Macanazos</span>
-        <a className="text-blue text-center flex align-center justify-evenly" href="https://mabs.dev"> website by mabs.dev</a>
+        <span className=" visible text-gray text-xl text-center flex align-center justify-evenly">© 2024 Macanazos</span>
+        <a className="visible  text-blue text-center flex align-center justify-evenly" href="https://mabs.dev"> website by mabs.dev</a>
       </footer>
     </main>
   );

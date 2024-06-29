@@ -39,6 +39,8 @@ export default function ProductPage({params}: {params: {id: string}}) {
           </Head>
           
             <HamburgerMenu />
+
+            
             <div id="contenedor de producto" className=" pt-16 pb-8 bg-blue flex flex-col md:flex-row md:justify-center md:items-start">
                 <div id="contenedor de imagenes" className="flex-col w-full md:w-2/5">
                     <ProductCarousel images={productImages} />
