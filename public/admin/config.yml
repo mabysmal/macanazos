@@ -171,6 +171,10 @@ collections:
       - { label: "Imagen 4", name: "Imagen4", widget: "image", required: false }
       - { label: "Imagen 5", name: "Imagen5", widget: "image", required: false }
       - { label: "Imagen 6", name: "Imagen6", widget: "image", required: false }
+      - { label: "Imagen 7", name: "Imagen7", widget: "image", required: false }
       - { label: "Descripción Detallada del Producto", name: "body", widget: "markdown" }
-      - { label: "Tipo de Macanazo" , name: "Tipo", widget: "select", options: ["Escolares", "De Empresas", "Individuales", "Deportivos", "Macanazos 3D", "Otros"] }
+      - label: "Opciones del Producto"
+        name: "opciones"
+        widget: "list"
+        field: { label: "opcion", name: "opcion", widget: "string" }
 
