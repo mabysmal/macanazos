@@ -16,7 +16,7 @@ import OptionsDetails from "@/components/optionsforproduct";
 
 
 export default function ProductPage({params}: {params: {id: string}}) {
-//data= las cajitas con info que escribe papa
+//data= las cajitas con info que escribe papa en la pagina admin
 //content= el texto largo que escribe papa con formato markdown
 
     const productData= readMatterData(params.id+'.mdx');
