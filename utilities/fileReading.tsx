@@ -17,7 +17,8 @@ type ProductContent = {
     readonly Imagen5?: string;
     readonly Imagen6?: string;
     readonly fullPath: string;
-    readonly Tipo: string;
+    readonly opciones: string;
+    readonly opcion: string;
 };
   
   
@@ -53,6 +54,7 @@ export function readMatterData(fileName: string){
       Imagen6?: string;
       fullPath: string;
       opciones: string;
+      opcion: string;
     };
     const fullPath = path.join(productsDirectory, fileName);
     matterData.fullPath = fullPath;

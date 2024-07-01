@@ -11,6 +11,7 @@ import Contactos from "@/components/contactos";
 import ReactMarkdown from "react-markdown";
 import './styles.css'
 import Head from 'next/head';
+import OptionsDetails from "@/components/optionsforproduct";
 
 
 
@@ -48,6 +49,7 @@ export default function ProductPage({params}: {params: {id: string}}) {
                 <div id="contenedor de texto" className="w-full md:w-2/5">
                     <h1 className="text-5xl pt-5 px-5 text-center md:text-left">{params.id}</h1>
                     <ReactMarkdown className="markdown-body" >{productContent}</ReactMarkdown>
+                    <OptionsDetails product={productData} />
                     <div className="a">
                       <button>Whatsapp</button>
                     </div>
