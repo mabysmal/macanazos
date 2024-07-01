@@ -175,5 +175,6 @@ collections:
       - label: "Opciones del Producto"
         name: "opciones"
         widget: "list"
+        required: false
         field: { label: "opcion", name: "opcion", widget: "string", required: false} 
 
