@@ -11,7 +11,7 @@ interface ImageCarouselProps {
 const ProductCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const imagesExisting = images.filter((image) => image !== undefined);
+  const imagesExisting = images.filter((image) => image !== undefined) as string[];
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? imagesExisting.length - 1 : prevIndex - 1));
