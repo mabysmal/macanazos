@@ -3,33 +3,37 @@ import { useState } from "react";
 import Image from "next/image";
 
 interface ImageCarouselProps {
-  images: string[];
+  images: (string|undefined)[];
 }
+
+
 
 const ProductCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const imagesExisting = images.filter((image) => image !== undefined);
+
   const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? imagesExisting.length - 1 : prevIndex - 1));
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) => (prevIndex === imagesExisting.length - 1 ? 0 : prevIndex + 1));
   };
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-around">
       
-      <div className="flex flex-col w-full justify-center items-center ">
+      <div className="flex flex-col w-full justify-center items-center ">  
         <Image
-          src={images[currentIndex]}
+          src={imagesExisting[currentIndex]}
           alt={`Image ${currentIndex + 1}`}
           width={600}
           height={600}
           className="object-cover w-full h-auto"
         />
         <div id="MiniaturasImagenesExtraProductosEnPc" className="hidden md:flex-row md:flex  md:w-full  justify-center">
-        {images.map((image, index) => (
+        {imagesExisting.map((image, index) => (
           <div key={index} className={`cursor-pointer ${currentIndex === index ? 'opacity-50' : ''}`} onClick={() => setCurrentIndex(index)}>
             <Image
               className="ImagenesExtraProductos p-2 justify-center items-center"
