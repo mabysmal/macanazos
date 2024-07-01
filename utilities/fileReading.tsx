@@ -52,7 +52,7 @@ export function readMatterData(fileName: string){
       Imagen5?: string;
       Imagen6?: string;
       fullPath: string;
-      Tipo: string;
+      opciones: string;
     };
     const fullPath = path.join(productsDirectory, fileName);
     matterData.fullPath = fullPath;

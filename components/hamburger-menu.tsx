@@ -25,7 +25,7 @@ const HamburgerMenu = () => {
                         </svg>
                     </a>
                 </li>
-                <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="a"><h2 className={bebasNeue.className}>Inicio</h2></a></li>
+                <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="/"><h2 className={bebasNeue.className}>Inicio</h2></a></li>
                 <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="/catalogo"><h2 className={bebasNeue.className}>Catálogo</h2></a></li>
                 <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="/como-funciona"><h2 className={bebasNeue.className}>Cómo funciona</h2></a></li>
                 <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="/resenas"><h2 className={bebasNeue.className}>Reseñas</h2></a></li>
@@ -44,7 +44,7 @@ const HamburgerMenu = () => {
                             </svg>
                         </a>
                     </li>
-                    <li className="w-full"><a className=" mb-6 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="a"><h2 className={bebasNeue.className}>Inicio</h2></a></li>
+                    <li className="w-full"><a className=" mb-6 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/"><h2 className={bebasNeue.className}>Inicio</h2></a></li>
                     <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/catalogo"><h2 className={bebasNeue.className}>Catálogo</h2></a></li>
                     <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/como-funciona"><h2 className={bebasNeue.className}>Cómo funciona</h2></a></li>
                     <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/resenas"><h2 className={bebasNeue.className}>Reseñas</h2></a></li>
@@ -53,14 +53,16 @@ const HamburgerMenu = () => {
                 </ul>
             </div>
             <div id="Logo-Principal" className="md:flex">
-                <Image
-                    className="m-2"
-                    src="/macanazos-logo-azul-borders.svg"
-                    alt="Macanazos Logo"
-                    width={256}
-                    height={99}
-                    priority
-                />
+                <a href='/'>
+                    <Image
+                        className="m-2"
+                        src="/macanazos-logo-azul-borders.svg"
+                        alt="Macanazos Logo"
+                        width={256}
+                        height={99}
+                        priority
+                    />
+                </a>
             </div>
         </nav>
         <a 
