@@ -19,9 +19,9 @@ export default function Home(){
             <span> productos: </span>
 
             {allFrontmatters.map((frontmatter) => (
-                <div id="cartas de productos" key={frontmatter.fullPath}>
+                <div id="cartas de productos" key={getURL(frontmatter.fullPath)}>
 
-                    <a href={frontmatter.fullPath} >
+                    <a href={getURL(frontmatter.fullPath)} >
                       <Image
                         src={frontmatter.thumbnail}
                         alt={frontmatter.title}
