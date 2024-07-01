@@ -7,7 +7,10 @@ import HamburgerMenu from "@/components/hamburger-menu";
 import { getAllFrontMatter, readMatterData } from "@/utilities/fileReading";
 
 export default function Home(){
-  const allFrontmatters = getAllFrontMatter()
+  const allFrontmatters = getAllFrontMatter();
+  function getURL(fullPath: string): string {
+    return fullPath.split('/').pop()?.split('.').shift() ?? '';
+    };
   
     return(
         <main>
