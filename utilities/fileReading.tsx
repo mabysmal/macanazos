@@ -7,18 +7,20 @@ import yaml from "js-yaml";
 export const productsDirectory = path.join(process.cwd(), "content/productos");
 
 type ProductContent = {
-    readonly title: string;
-    readonly description: string;
-    readonly medidas: string;
-    readonly thumbnail: string ;
-    readonly Imagen2?: string;
-    readonly Imagen3?: string;
-    readonly Imagen4?: string;
-    readonly Imagen5?: string;
-    readonly Imagen6?: string;
-    readonly fullPath: string;
-    readonly opciones: string;
-    readonly opcion: string;
+  readonly title: string;
+  readonly smdescription: string;
+  readonly medidas: string;
+  readonly thumbnail: string;
+  readonly Imagen2?: string;
+  readonly Imagen3?: string;
+  readonly Imagen4?: string;
+  readonly Imagen5?: string;
+  readonly Imagen6?: string;
+  readonly Imagen7?: string;
+  readonly description: string;
+  readonly esttime: string;
+  readonly price: string;
+  readonly fullPath: string;
 };
   
   
@@ -44,6 +46,7 @@ export function readMatterData(fileName: string){
     
     const matterData = matterResult.data as {
       title: string;
+      smdescription: string;
       description: string;
       medidas: string;
       thumbnail: string;
@@ -52,9 +55,11 @@ export function readMatterData(fileName: string){
       Imagen4?: string;
       Imagen5?: string;
       Imagen6?: string;
+      Imagen7?: string;
+      esttime: string;
+      price: string;
       fullPath: string;
-      opciones: string;
-      opcion: string;
+      
     };
     const fullPath = path.join(productsDirectory, fileName);
     matterData.fullPath = fullPath;

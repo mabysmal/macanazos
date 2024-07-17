@@ -28,7 +28,8 @@ export default function ProductPage({params}: {params: {id: string}}) {
         productData.Imagen3,
         productData.Imagen4,
         productData.Imagen5,
-        productData.Imagen6
+        productData.Imagen6,
+        productData.Imagen7,
     ].filter(image => image !== undefined); // filtra los valores undefined
 
 
