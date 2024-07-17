@@ -17,14 +17,19 @@ export default function Home() {
 
   type ProductContent = {
     readonly title: string;
-    readonly description: string;
+    readonly smdescription: string;
     readonly medidas: string;
-    readonly thumbnail: string ;
+    readonly thumbnail: string;
     readonly Imagen2?: string;
     readonly Imagen3?: string;
     readonly Imagen4?: string;
     readonly Imagen5?: string;
     readonly Imagen6?: string;
+    readonly Imagen7?: string;
+    readonly description: string;
+    readonly esttime: string;
+    readonly price: string;
+
     readonly fullPath: string;
   };
 
@@ -53,9 +58,18 @@ export default function Home() {
         });
         const matterData = matterResult.data as {
           title: string;
-          description: string;
+          smdescription: string;
           medidas: string;
           thumbnail: string;
+          Imagen2: string;
+          Imagen3: string;
+          Imagen4: string;
+          Imagen5: string;
+          Imagen6: string;
+          Imagen7: string;
+          description: string;
+          esttime: string;
+          price: string;
           fullPath: string;
         };
         matterData.fullPath = fullPath;
