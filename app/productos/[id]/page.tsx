@@ -50,7 +50,7 @@ export default function ProductPage({params}: {params: {id: string}}) {
                     <h1 className="text-5xl pt-5 px-5 text-center md:text-left">{params.id}</h1>
                     <ReactMarkdown className="markdown-body" >{productData.description}</ReactMarkdown>
                     <p className="texto-body">Medidas del producto:   {productData.medidas}***</p>
-                    <p className="texto-body">Tiempo de entrega estimado:   {productData.esttime}</p>
+                    <p className="texto-body">Tiempo de entrega estimado:   {productData.esttime}, dependiendo de la cantidad de unidades del pedido.</p>
                     <p className="texto-precio"> {productData.price}.00 MXN*</p>
                     {/* <OptionsDetails product={productData} /> */}
                     <div className="flex flex-row justify-center text-2xl w-full ">
