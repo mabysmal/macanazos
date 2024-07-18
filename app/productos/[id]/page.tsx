@@ -51,7 +51,7 @@ export default function ProductPage({params}: {params: {id: string}}) {
                     <ReactMarkdown className="markdown-body" >{productData.description}</ReactMarkdown>
                     <p className="texto-body">Medidas del producto:   {productData.medidas}***</p>
                     <p className="texto-body">Tiempo de entrega estimado:   {productData.esttime}</p>
-                    <p className="texto-precio">$   {productData.price}.00 MXN*</p>
+                    <p className="texto-precio"> {productData.price}.00 MXN*</p>
                     {/* <OptionsDetails product={productData} /> */}
                     <div className="flex flex-row justify-center text-2xl w-full ">
                       <a href="https://wa.me/8129396449?text=hi%20id%20like%20a%20chocolate%20bar" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-colors">
@@ -68,7 +68,7 @@ export default function ProductPage({params}: {params: {id: string}}) {
             </div>
 
             <div className="asteriscos pb-8 flex-wrap bg-blue flex w-full flex-center justify-center">
-              <span className="text-center text-light-blue">* El precio es por unidad a menos que se deje en claro en la descripción que el precio es determinado por grupos.</span>
+              <span className="text-center text-light-blue">* El precio es por unidad a menos que se deje en claro en la descripción que el precio es determinado por grupos de unidades.</span>
               <span className="text-center text-light-blue ">** Se debe pagar un adelanto del 50% del precio total del pedido para iniciar su producción.</span>
               <span className="text-center text-light-blue ">*** Las medidas fueron tomadas manualmente. Las medidas pueden variar de 1-5 cm</span>
 

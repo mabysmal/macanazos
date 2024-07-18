@@ -19,27 +19,26 @@ export default function Home(){
     return(
         <main >
             <HamburgerMenu />
-            <div className="bg-blue py-8 px-4 md:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+            <div className="bg-blue py-8 px-4 md:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {allFrontmatters.map((frontmatter) => (
-                <div className=" bg-blue border-2 border-orange rounded-lg shadow-md overflow-hidden" id="cartas de productos" key={getURL(frontmatter.fullPath)}>
-                  <div id="productCards" className=" aspect-w-1 aspect-h-1 flex-row flex w-full  justify-center w-full">
-                    <a href={'/productos/' + getURL(frontmatter.fullPath)} >
-                      <Image
-                        src={frontmatter.thumbnail}
-                        alt={frontmatter.title}
-                        width={256}
-                        height={256}
-                        className="productthumbnail max-w-full max-h-full" 
-                      />
-                      <div className="texto-cards text-white">
-                        <h2 className="text-4xl font-semibold mb-4">{frontmatter.title}</h2>
-                        <p className="text-sm text-gray-600 mb-4">{frontmatter.smdescription}</p>
-                        <span className="text-2xl font-bold mb-4 text-blue-600">${frontmatter.price}.00 MXN</span>
-                      </div>
-                    </a>
-                  </div>
-                    
+            <div className="bg-blue border-2 border-orange rounded-lg shadow-md overflow-hidden flex flex-col h-full" key={getURL(frontmatter.fullPath)}>
+              <a href={'/productos/' + getURL(frontmatter.fullPath)} className="flex flex-col h-full">
+                <div className="flex-1 flex justify-center items-center p-4">
+                  <Image
+                    src={frontmatter.thumbnail}
+                    alt={frontmatter.title}
+                    width={256}
+                    height={256}
+                    className="object-contain max-w-full max-h-full"
+                  />
                 </div>
+                <div className="texto-cards text-white p-4">
+                  <h2 className="text-4xl font-semibold mb-4">{frontmatter.title}</h2>
+                  <p className="text-sm text-gray-600 mb-4">{frontmatter.smdescription}</p>
+                  <span className="text-2xl font-bold mb-4 text-blue-600">{frontmatter.price}.00 MXN</span>
+                </div>
+              </a>
+            </div>
             ))}
             </div>
             <footer className="bg-black justify-center pb-10 pt-10 mt-4">
