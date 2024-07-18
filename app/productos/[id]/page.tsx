@@ -59,7 +59,7 @@ export default function ProductPage({params}: {params: {id: string}}) {
                       </a>
                     </div>
                     <div className="flex flex-row justify-center text-2xl w-full mt-4">
-                      <a href={`mailto:tu@email.com?subject=${encodeURIComponent(`Me interesa este producto "${productData.title}"`)}&body=${encodeURIComponent(`Hola, buenas tardes. Soy [su nombre aquí], representando [nombre de la familia, escuela, empresa o institución]. Me interesa su producto [${productData.title}], para [cantidad de personas para el macanazo] personas. 
+                      <a href={`mailto:castillo.memo@gmail.com?subject=${encodeURIComponent(`Me interesa este producto "${productData.title}"`)}&body=${encodeURIComponent(`Hola, buenas tardes. Soy [su nombre aquí], representando [nombre de la familia, escuela, empresa o institución]. Me interesa su producto [${productData.title}], para [cantidad de personas para el macanazo] personas. 
 
                       ¿Me podría dar más información del producto?, ¿Tiene alguna promoción vigente?`)}`}>
                         <button id="Contact-Email" className="text-4xl bg-orange pt-2 px-5 rounded-xl"> Contactar por Email</button>
