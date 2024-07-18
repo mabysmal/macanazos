@@ -70,7 +70,7 @@ export default function ProductPage({params}: {params: {id: string}}) {
             <div className="asteriscos pb-8 flex-wrap bg-blue flex w-full flex-center justify-center">
               <span className="text-center text-light-blue">* El precio es por unidad a menos que se deje en claro en la descripción que el precio es determinado por grupos de unidades.</span>
               <span className="text-center text-light-blue ">** Se debe pagar un adelanto del 50% del precio total del pedido para iniciar su producción.</span>
-              <span className="text-center text-light-blue ">*** Las medidas fueron tomadas manualmente. Las medidas pueden variar de 1-5 cm</span>
+              <span className="text-center text-light-blue ">*** Las medidas fueron tomadas manualmente. Las medidas pueden variar de 1-2 cm</span>
 
             </div>
 
