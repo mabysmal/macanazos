@@ -11,7 +11,6 @@ import Contactos from "@/components/contactos";
 import ReactMarkdown from "react-markdown";
 import './styles.css'
 import Head from 'next/head';
-import OptionsDetails from "@/components/optionsforproduct";
 
 
 
@@ -49,15 +48,18 @@ export default function ProductPage({params}: {params: {id: string}}) {
                 </div>
                 <div id="contenedor de texto" className="w-full md:w-2/5">
                     <h1 className="text-5xl pt-5 px-5 text-center md:text-left">{params.id}</h1>
-                    <ReactMarkdown className="markdown-body" >{productContent}</ReactMarkdown>
+                    <ReactMarkdown className="markdown-body" >{productData.description}</ReactMarkdown>
+                    <p className="texto-body">Medidas del producto:   {productData.medidas}</p>
+                    <p className="texto-body">Tiempo de entrega estimado:   {productData.esttime}</p>
+                    <p className="texto-precio">$   {productData.price}.00 MXN</p>
                     {/* <OptionsDetails product={productData} /> */}
                     <div className="flex flex-row justify-center text-2xl w-full ">
                       <a href="https://wa.me/8129396449?text=hi%20id%20like%20a%20chocolate%20bar" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-colors">
-                        <button id="Contact-Whatsapp" className="bg-green px-5 rounded-xl"> Contactar por Whatsapp</button>
+                        <button id="Contact-Whatsapp" className="text-4xl bg-green pt-2 px-5 rounded-xl"> Contactar por Whatsapp</button>
                       </a>
                     </div>
                     <div className="flex flex-row justify-center text-2xl w-full mt-4">
-                    <button id="Contact-Email" className="bg-orange px-5 rounded-xl"> Contactar por Email</button>
+                    <button id="Contact-Email" className="text-4xl bg-orange pt-2 px-5 rounded-xl"> Contactar por Email</button>
                     </div>
 
                 </div>
