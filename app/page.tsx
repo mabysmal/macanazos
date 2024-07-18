@@ -106,7 +106,7 @@ export default function Home() {
             <Image
               className="ml-auto mr-auto rounded-2xl "
               src="/MacanazoEscuelas.jpg"
-              alt="a"
+              alt="Macanazos Escolares"
               width={256}
               height={256}
               style={{ width: '90%', height: 'auto' }}
@@ -119,7 +119,7 @@ export default function Home() {
             <Image
               className="ml-auto mr-auto  rounded-2xl"
               src="/MacanazoCaracterizado.jpg"
-              alt="a"
+              alt="MAcanazos Caracterizados"
               width={256}
               height={256}
               style={{ width: '90%', height: 'auto' }}
@@ -128,28 +128,30 @@ export default function Home() {
             </a>
           </li>
           <li className="mb-6 overflow-hidden max-w-xs transition duration-300 ease-in-out hover:scale-110">
-            <a href="a"></a>
+            <a href="/productos/poster-grupal">
             <Image
               className="ml-auto mr-auto rounded-2xl"
               src="/PosterGrupal.jpg"
-              alt="a"
+              alt="Poster Grupal"
               width={256}
               height={256}
               style={{ width: '90%', height: 'auto' }}
             ></Image>
             <h3 className=" text-white text-3xl flex justify-around">Poster Grupal</h3>
+            </a>
           </li>
           <li className="mb-6 overflow-hidden max-w-xs transition duration-300 ease-in-out hover:scale-110">
-            <a href="a"></a>
+            <a href="/productos/macanazos-de-empresas">
             <Image
               className="ml-auto mr-auto  rounded-2xl"
               src="/MacanazoEmpresarial.jpg"
-              alt="a"
+              alt="Macanazo Empresarial"
               width={256}
               height={256}
               style={{ width: '90%', height: 'auto' }}
             ></Image>
             <h3 className=" text-white text-3xl flex justify-around">Macanazos de Empresas</h3>
+            </a>
           </li>
         </ul>
       </div>
