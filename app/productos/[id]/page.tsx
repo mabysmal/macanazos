@@ -54,12 +54,16 @@ export default function ProductPage({params}: {params: {id: string}}) {
                     <p className="texto-precio"> {productData.price}.00 MXN*</p>
                     {/* <OptionsDetails product={productData} /> */}
                     <div className="flex flex-row justify-center text-2xl w-full ">
-                      <a href="https://wa.me/8129396449?text=hi%20id%20like%20a%20chocolate%20bar" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-colors">
+                      <a href={`https://wa.me/+528110596823?text=${encodeURIComponent(`Hola, me interesa "${productData.title}", me podría dar más información?`)}`} target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-colors">
                         <button id="Contact-Whatsapp" className="text-4xl bg-green pt-2 px-5 rounded-xl"> Contactar por Whatsapp</button>
                       </a>
                     </div>
                     <div className="flex flex-row justify-center text-2xl w-full mt-4">
-                    <button id="Contact-Email" className="text-4xl bg-orange pt-2 px-5 rounded-xl"> Contactar por Email</button>
+                      <a href={`mailto:tu@email.com?subject=${encodeURIComponent(`Me interesa este producto "${productData.title}"`)}&body=${encodeURIComponent(`Hola, buenas tardes. Soy [su nombre aquí], representando [nombre de la familia, escuela, empresa o institución]. Me interesa su producto [${productData.title}], para [cantidad de personas para el macanazo] personas. 
+
+                      ¿Me podría dar más información del producto?, ¿Tiene alguna promoción vigente?`)}`}>
+                        <button id="Contact-Email" className="text-4xl bg-orange pt-2 px-5 rounded-xl"> Contactar por Email</button>
+                      </a>
                     </div>
 
                 </div>
