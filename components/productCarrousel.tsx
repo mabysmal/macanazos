@@ -41,6 +41,7 @@ const ProductCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
               alt={`Thumbnail ${index + 1}`}
               width={64}
               height={64}
+              priority
               
             />
           </div>
