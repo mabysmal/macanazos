@@ -174,7 +174,7 @@ collections:
       - { label: "Descripción Detallada del Producto", name: "description", widget: "markdown" }
       - { label: "Medidas del Producto en formato YxYxY cm", name: "medidas", widget: "text"}
       - { label: "Tiempo de entrega estimado", name: "esttime", widget: "text"}
-      - { label: "Precio, solo los numeros sin el simbolo de pesos", name: "price", widget: "text"}
+      - { label: "Precio, con el simbolo de pesos", name: "price", widget: "text"}
   
   # - name: "paquetes"
   #   label: "Paquetes"

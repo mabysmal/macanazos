@@ -35,7 +35,7 @@ export default function Home(){
                 <div className="texto-cards text-white p-4">
                   <h2 className="text-4xl font-semibold mb-4">{frontmatter.title}</h2>
                   <p className="text-sm text-gray-600 mb-4">{frontmatter.smdescription}</p>
-                  <span className="text-2xl font-bold mb-4 text-blue-600">{frontmatter.price}.00 MXN</span>
+                  <span className="text-2xl font-bold mb-4 text-blue-600 text-center">{frontmatter.price}.00 MXN</span>
                 </div>
               </a>
             </div>
