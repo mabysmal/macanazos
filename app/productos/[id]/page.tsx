@@ -54,7 +54,7 @@ export default function ProductPage({params}: {params: {id: string}}) {
                     <p className="texto-precio"> {productData.price}.00 MXN*</p>
                     {/* <OptionsDetails product={productData} /> */}
                     <div className="flex flex-row justify-center text-2xl w-full ">
-                      <a href={`https://wa.me/+528110596823?text=${encodeURIComponent(`Hola, me interesa "${productData.title}", me podría dar más información?`)}`} target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-colors">
+                      <a href={`https://wa.me/+528110596823?text=${encodeURIComponent(`Hola, me interesa "${productData.title}", ¿me podría dar más información del producto?`)}`} target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-colors">
                         <button id="Contact-Whatsapp" className="text-4xl bg-green pt-2 px-5 rounded-xl"> Contactar por Whatsapp</button>
                       </a>
                     </div>
