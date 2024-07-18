@@ -102,7 +102,7 @@ export default function Home() {
         </h2>
         <ul className="flex flex-row justify-center  mb-8 flex-wrap align-center items-center">
           <li className="mb-6 overflow-hidden max-w-xs transition duration-300 ease-in-out hover:scale-110">
-            <a href="a"></a>
+            <a href="/productos/macanazo-en-uniforme-escolar">
             <Image
               className="ml-auto mr-auto rounded-2xl "
               src="/MacanazoEscuelas.jpg"
@@ -112,9 +112,10 @@ export default function Home() {
               style={{ width: '90%', height: 'auto' }}
             ></Image>
             <h3 className=" text-white text-3xl flex justify-around">Macanazos Escolares</h3>
+            </a>
           </li>
           <li className="mb-6 overflow-hidden max-w-xs transition duration-300 ease-in-out hover:scale-110">
-            <a href="a"></a>
+            <a href="/productos/macanazo-caracterizado">
             <Image
               className="ml-auto mr-auto  rounded-2xl"
               src="/MacanazoCaracterizado.jpg"
@@ -124,6 +125,7 @@ export default function Home() {
               style={{ width: '90%', height: 'auto' }}
             ></Image>
             <h3 className=" text-white text-3xl flex justify-around">Macanazos Caracterizados</h3>
+            </a>
           </li>
           <li className="mb-6 overflow-hidden max-w-xs transition duration-300 ease-in-out hover:scale-110">
             <a href="a"></a>
