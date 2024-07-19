@@ -57,7 +57,7 @@ export default function Home() {
     <main>
       <HamburgerMenu />
       
-      <div id='contCatalogo' className='bg-blue text-white text-3xl font-bold text-center my-8'>
+      <div id='contCatalogo' className='bg-blue text-white text-3xl font-bold text-center py-8'>
         <div id='contPaquetes' className=''>
           <h2 className="text-6xl underline decoration-orange">Paquetes Promocionales</h2>
           <ProductGrid items={allPaquetesFrontmatters} type="paquetes" />
