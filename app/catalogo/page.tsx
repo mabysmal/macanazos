@@ -15,6 +15,8 @@ export default function Home(){
   function getURL(fullPath: string): string {
     return fullPath.split('/').pop()?.split('.').shift() ?? '';
     };
+
+    
   
     return(
         <main >
