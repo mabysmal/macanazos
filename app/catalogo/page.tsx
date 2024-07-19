@@ -62,7 +62,7 @@ export default function Home() {
           <h2 className="text-6xl underline decoration-orange">Paquetes Promocionales</h2>
           <ProductGrid items={allPaquetesFrontmatters} type="paquetes" />
         </div>
-        <div id='contProductos' className=''>
+        <div id='contProductos' className='pt-14'>
           <h2 className="text-6xl underline decoration-orange">Productos</h2>
           <ProductGrid items={allFrontmatters} type="productos" />
         </div>
