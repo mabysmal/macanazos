@@ -16,6 +16,10 @@ export default function Home(){
     return fullPath.split('/').pop()?.split('.').shift() ?? '';
     };
 
+
+
+    
+
     
   
     return(
