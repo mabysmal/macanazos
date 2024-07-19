@@ -176,27 +176,27 @@ collections:
       - { label: "Tiempo de entrega estimado", name: "esttime", widget: "text"}
       - { label: "Precio, con el simbolo de pesos", name: "price", widget: "text"}
   
-  # - name: "paquetes"
-  #   label: "Paquetes"
-  #   folder: "content/paquetes"
-  #   extension: "mdx"
-  #   format: "frontmatter"
-  #   create: true
-  #   slug: "{{title}}"
-  #   identifier_field: title
-  #   summary: "{{description}}"
-  #   fields:
-  #     - { label: "Título del Producto", name: "title", widget: "string" }
-  #     - { label: "Breve Descripción del Producto, texto corto de max. 2 oraciones", name: "smdescription", widget: "text" }
-  #     - { label: "Imagen Principal del Producto", name: "thumbnail", widget: "image" }
-  #     - { label: "Imagen 2 (Opcional)", name: "Imagen2", widget: "image", required: false}
-  #     - { label: "Imagen 3 (Opcional)", name: "Imagen3", widget: "image", required: false }
-  #     - { label: "Imagen 4 (Opcional)", name: "Imagen4", widget: "image", required: false }
-  #     - { label: "Imagen 5 (Opcional)", name: "Imagen5", widget: "image", required: false }
-  #     - { label: "Imagen 6 (Opcional)", name: "Imagen6", widget: "image", required: false }
-  #     - { label: "Imagen 7 (Opcional)", name: "Imagen7", widget: "image", required: false }
-  #     - { label: "Descripción Detallada del Producto", name: "description", widget: "markdown" }
-  #     - { label: "Medidas del Producto en formato YxYxY cm", name: "medidas", widget: "text"}
-  #     - { label: "Tiempo de entrega estimado", name: "esttime", widget: "text"}
-  #     - { label: "Precio, solo los numeros sin el simbolo de pesos", name: "price", widget: "text"}
+  - name: "paquetes"
+    label: "Paquetes"
+    folder: "content/paquetes"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{title}}"
+    identifier_field: title
+    summary: "{{description}}"
+    fields:
+      - { label: "Título del Producto", name: "title", widget: "string" }
+      - { label: "Breve Descripción del Producto, texto corto de max. 2 oraciones", name: "smdescription", widget: "text" }
+      - { label: "Imagen Principal del Producto", name: "thumbnail", widget: "image" }
+      - { label: "Imagen 2 (Opcional)", name: "Imagen2", widget: "image", required: false}
+      - { label: "Imagen 3 (Opcional)", name: "Imagen3", widget: "image", required: false }
+      - { label: "Imagen 4 (Opcional)", name: "Imagen4", widget: "image", required: false }
+      - { label: "Imagen 5 (Opcional)", name: "Imagen5", widget: "image", required: false }
+      - { label: "Imagen 6 (Opcional)", name: "Imagen6", widget: "image", required: false }
+      - { label: "Imagen 7 (Opcional)", name: "Imagen7", widget: "image", required: false }
+      - { label: "Descripción Detallada del Producto", name: "description", widget: "markdown" }
+      - { label: "Medidas del Producto en formato YxYxY cm", name: "medidas", widget: "text"}
+      - { label: "Tiempo de entrega estimado", name: "esttime", widget: "text"}
+      - { label: "Precio, con el simbolo de pesoss", name: "price", widget: "text"}
 
