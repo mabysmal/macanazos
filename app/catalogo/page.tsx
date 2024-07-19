@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from "next/image";
 import HamburgerMenu from "@/components/hamburger-menu";
-import { getAllFrontMatter, getPaquetesAllFrontMatter } from "@/utilities/fileReading";
+import { getAllFrontMatter, } from "@/utilities/fileReading";
+//luego agregar  getPaquetesAllFrontMatter
 import './styles.css'
 import MapComponent from "@/components/map";
 import Contactos from "@/components/contactos";
@@ -17,7 +18,8 @@ type ItemContent = {
 
 type ProductGridProps = {
   items: ItemContent[];
-  type: 'productos' | 'paquetes';
+  type: 'productos' ;
+  // agregar a type esto: | 'paquetes'
 };
 
 const ProductGrid: React.FC<ProductGridProps> = ({ items, type }) => (
@@ -51,17 +53,17 @@ function getURL(fullPath: string): string {
 
 export default function Home() {
   const allFrontmatters = getAllFrontMatter();
-  const allPaquetesFrontmatters = getPaquetesAllFrontMatter();
+  // const allPaquetesFrontmatters = getPaquetesAllFrontMatter();
 
   return (
     <main>
       <HamburgerMenu />
       
       <div id='contCatalogo' className='bg-blue text-white text-3xl font-bold text-center py-8'>
-        <div id='contPaquetes' className=''>
+        {/* <div id='contPaquetes' className=''>
           <h2 className="text-6xl underline decoration-orange">Paquetes Promocionales</h2>
           <ProductGrid items={allPaquetesFrontmatters} type="paquetes" />
-        </div>
+        </div> */}
         <div id='contProductos' className='pt-14'>
           <h2 className="text-6xl underline decoration-orange">Productos</h2>
           <ProductGrid items={allFrontmatters} type="productos" />
