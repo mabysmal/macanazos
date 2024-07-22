@@ -163,6 +163,7 @@ collections:
     summary: "{{description}}"
     fields:
       - { label: "Título del Producto", name: "title", widget: "string" }
+      - { label: "Categoria, seleccionar minimo 1 opcion", name: "tags", widget: "select", multiple: true, options: ["Escolares", "Empresas", "Individuales", "Deportivos", "3D"] }
       - { label: "Breve Descripción del Producto, texto corto de max. 2 oraciones", name: "smdescription", widget: "text" }
       - { label: "Imagen Principal del Producto", name: "thumbnail", widget: "image" }
       - { label: "Imagen 2 (Opcional)", name: "Imagen2", widget: "image", required: false}
@@ -187,6 +188,7 @@ collections:
     summary: "{{description}}"
     fields:
       - { label: "Título del Producto", name: "title", widget: "string" }
+      - { label: "Categoria, seleccionar minimo 1 opcion", name: "tags", widget: "select", multiple: true, options: ["Escolares", "Empresas", "Individuales", "Deportivos", "3D"] }
       - { label: "Breve Descripción del Producto, texto corto de max. 2 oraciones", name: "smdescription", widget: "text" }
       - { label: "Imagen Principal del Producto", name: "thumbnail", widget: "image" }
       - { label: "Imagen 2 (Opcional)", name: "Imagen2", widget: "image", required: false}
