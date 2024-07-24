@@ -9,6 +9,7 @@ export const paquetesDirectory = path.join(process.cwd(), "content/paquetes");
 
 type ProductContent = {
   readonly title: string;
+  readonly tags: string[],
   readonly smdescription: string;
   readonly medidas: string;
   readonly thumbnail: string;
@@ -26,6 +27,7 @@ type ProductContent = {
 
 type PaquetesContent = {
   readonly title: string;
+  readonly tags: string[],
   readonly smdescription: string;
   readonly thumbnail: string;
   readonly Imagen2?: string;
@@ -79,6 +81,7 @@ export function readMatterData(fileName: string){
     
     const matterData = matterResult.data as {
       title: string;
+      tags: string[],
       smdescription: string;
       description: string;
       medidas: string;
@@ -105,6 +108,7 @@ export function readPaquetesMatterData(fileName: string){
     
     const paquetesMatterData = paquetesMatterResult.data as {
       title: string;
+      tags: string[],
       smdescription: string;
       description: string;
       medidas: string;
