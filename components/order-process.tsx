@@ -18,7 +18,7 @@ const steps: Step[] = [
       <p className='pt-4'>Necesitaremos estos datos para hacer tu cotización:</p>
       <ul className='pt-6'>
         <li className='pt-4'>🔵 ¿De cuántas personas es el grupo a caracterizar?</li>
-        <li className='pt-4'>🔵 ¿De qué escuela, empresa o grupo deportivo son?</li>
+        <li className='pt-4'>🔵 ¿De qué escuela, empresa, club o grupo deportivo son?</li>
         <li className='pt-4'>🔵 ¿Cuál es la fecha del evento?</li>
         <li className='pt-4'>🔵 ¿Quién o quiénes estarán a cargo de recibir el trabajo?</li>
       </ul>
@@ -102,7 +102,7 @@ const OrderProcess: React.FC = () => {
           <span className="mr-2">Siguiente paso</span> <ChevronRight />
         </button>
       </div>
-      <div className="bg-orange rounded-lg shadow-md p-6 mb-4">
+      <div className="bg-orange rounded-lg shadow-md p-6 mb-4 min-h-30">
         <h2 className="text-white text-4xl font-bold mb-2">{steps[activeStep].title}</h2>
         <div className='DescripcionPaso text-white' dangerouslySetInnerHTML={{ __html: steps[activeStep].content }} />
       </div>
