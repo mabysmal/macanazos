@@ -27,9 +27,9 @@ const HamburgerMenu = () => {
                 </li>
                 <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="/"><h2 className={bebasNeue.className}>Inicio</h2></a></li>
                 <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="/catalogo"><h2 className={bebasNeue.className}>Catálogo</h2></a></li>
-                <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="/"><h2 className={bebasNeue.className}>Cómo ordenar</h2></a></li>
+                <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="/proceso"><h2 className={bebasNeue.className}>Cómo ordenar</h2></a></li>
                 {/* <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href=""><h2 className={bebasNeue.className}>Reseñas</h2></a></li> */}
-                <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="/"><h2 className={bebasNeue.className}>Nosotros</h2></a></li>
+                {/* <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="/"><h2 className={bebasNeue.className}>Nosotros</h2></a></li> */}
                 <li><a className="h-full px-8 no-underline hidden items-center font-font-bebas text-2xl md:flex md:text-white md:overflow-hidden md:max-w-xs md:transition md:duration-300 md:ease-in-out md:hover:scale-150" href="/"><h2 className={bebasNeue.className}>Contacto</h2></a></li>   
             </ul>
         </div>
@@ -46,9 +46,9 @@ const HamburgerMenu = () => {
                     </li>
                     <li className="w-full"><a className=" mb-6 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/"><h2 className={bebasNeue.className}>Inicio</h2></a></li>
                     <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/catalogo"><h2 className={bebasNeue.className}>Catálogo</h2></a></li>
-                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/"><h2 className={bebasNeue.className}>Cómo ordenar</h2></a></li>
+                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/proceso"><h2 className={bebasNeue.className}>Cómo ordenar</h2></a></li>
                     {/* <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/"><h2 className={bebasNeue.className}>Reseñas</h2></a></li> */}
-                    <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/"><h2 className={bebasNeue.className}>Nosotros</h2></a></li>
+                    {/* <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/"><h2 className={bebasNeue.className}>Nosotros</h2></a></li> */}
                     <li className="w-full"><a className=" mb-4 w-full px-8 no-underline flex items-center font-font-bebas text-4xl hover:bg-blue hover:text-white" href="/"><h2 className={bebasNeue.className}>Contacto</h2></a></li>
                 </ul>
             </div>
