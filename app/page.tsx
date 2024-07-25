@@ -32,7 +32,7 @@ export default function Home() {
     readonly fullPath: string;
   };
 
-
+//aa
 
   let productCache: ProductContent[];
 
