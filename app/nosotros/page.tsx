@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main>
       <HamburgerMenu />
-      <div className="bg-blue container mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
+      <div className="bg-blue container px-4 sm:px-6 md:px-8 lg:px-10">
         <h1 className='pt-6 text-white text-center text-4xl md:text-5xl lg:text-6xl underline decoration-orange'>
           Hola, soy Guillermo Castillo
         </h1>
