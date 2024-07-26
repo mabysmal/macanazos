@@ -14,7 +14,7 @@ export default function Home() {
 
   const productsDirectory = path.join(process.cwd(), "content/productos");
 
-  type ProductContent = {
+   type ProductContent = {
     readonly title: string;
     readonly smdescription: string;
     readonly medidas: string;
