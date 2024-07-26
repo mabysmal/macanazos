@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main>
       <HamburgerMenu />
-      <div className="bg-blue container px-4 sm:px-6 md:px-8 lg:px-10">
+      <div className="bg-blue px-4 sm:px-6 md:px-8 lg:px-10">
         <h1 className='pt-6 text-white text-center text-4xl md:text-5xl lg:text-6xl underline decoration-orange'>
           Hola, soy Guillermo Castillo
         </h1>
@@ -28,20 +28,19 @@ export default function Home() {
           Licenciado en Diseño gráfico, Ilustrador profesional, con una carrera de más de 25 años en el área. Maestro, Infógrafo, caricaturista, ilustrador editorial.
         </p>
         <div className='py-6'>
-          <div className='max-w-screen-xl mx-auto'>
-            <Image
-              className="w-full h-auto border-4 border-orange rounded-2xl"
-              src="/banner-portafolio.png"
-              alt="Banner de Portafolio"
-              width={900}
-              height={300}
-              layout="responsive"
-            />
-          </div>
+        <div className="w-full max-w-[80%] mx-auto">
+          <Image
+            className="w-full h-auto border-4 border-orange rounded-2xl"
+            src="/banner-portafolio.png"
+            alt="Banner de Portafolio"
+            width={900}
+            height={300}
+          />
+        </div>
         </div>
 
-        <div id='historia' className="flex flex-row items-center justify-between gap-4 py-12">
-          <div className="w-1/4">
+        <div id='historia' className="flex flex-col md:flex-row items-center justify-between gap-8 py-12">
+          <div className="w-full md:w-1/4">
             <Image
               className="rounded-2xl w-full h-auto"
               src="/PlacaElNorte.jpeg"
@@ -51,8 +50,8 @@ export default function Home() {
               layout="responsive"
             />
           </div>
-  
-          <div id='textos-aboutus' className='w-1/2 textos text-white text-center text-base sm:text-lg md:text-xl lg:text-2xl'>
+
+          <div id='textos-aboutus' className='w-full md:w-1/2 textos text-white text-center text-lg md:text-xl lg:text-2xl'>
             <p className="mb-6">
               Tengo más de 30 años de experiencia en diseño gráfico e ilustración, trabajando para el periódico El Norte; siendo maestro de la Facultad de Artes Visuales de la UANL; y siendo ilustrador y diseñador gráfico en Código Magenta.
             </p>
@@ -60,8 +59,8 @@ export default function Home() {
               Macanazos inició con la ilustración ¨bombero¨, mediante el primer pedido hecho para el Colegio Madison de Monterrey; y de ahí en adelante, trabajando para varios colegios y universidades de la localidad.
             </p>
           </div>
-  
-          <div className="w-1/4">
+
+          <div className="w-full md:w-1/4">
             <Image
               className="rounded-2xl w-full h-auto"
               src="/madison-macanazos.jpeg"
