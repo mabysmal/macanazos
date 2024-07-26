@@ -1,15 +1,10 @@
-import fs from "fs";
-import matter from "gray-matter";
-import path from "path";
-import yaml from "js-yaml";
-import Image from "next/image";
 import HamburgerMenu from "@/components/hamburger-menu";
-import { getMatter, readContent, readMatterData } from "@/utilities/fileReading";
+import { readContent, readMatterData } from "@/utilities/fileReading";
 import ProductCarousel from "@/components/productCarrousel";
 import FooterMacanazos from "@/components/footerMacanazos";
 import ReactMarkdown from "react-markdown";
 import './styles.css'
-import Head from 'next/head';
+import { Montserrat } from "next/font/google";
 
 
 
@@ -30,14 +25,8 @@ export default function ProductPage({params}: {params: {id: string}}) {
         productData.Imagen7,
     ].filter(image => image !== undefined); // filtra los valores undefined
 
-
-
     return(
         <main>
-          <Head>
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet" />
-          </Head>
-          
             <HamburgerMenu />
 
             

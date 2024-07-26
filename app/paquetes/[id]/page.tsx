@@ -1,17 +1,9 @@
-import fs from "fs";
-import matter from "gray-matter";
-import path from "path";
-import yaml from "js-yaml";
-import Image from "next/image";
 import HamburgerMenu from "@/components/hamburger-menu";
-import { getMatter, readPaquetesContent, readPaquetesMatterData } from "@/utilities/fileReading";
+import { readPaquetesContent, readPaquetesMatterData } from "@/utilities/fileReading";
 import ProductCarousel from "@/components/productCarrousel";
 import ReactMarkdown from "react-markdown";
 import './styles.css'
-import Head from 'next/head';
 import FooterMacanazos from "@/components/footerMacanazos";
-
-
 
 export default function PaquetesPage({params}: {params: {id: string}}) {
 //data= las cajitas con info que escribe papa en la pagina admin
@@ -30,14 +22,13 @@ export default function PaquetesPage({params}: {params: {id: string}}) {
         paqueteData.Imagen7,
     ].filter(image => image !== undefined); // filtra los valores undefined
 
-
+    // const montserrat = Montserrat({
+    //   weight: "400",
+    //   display: "swap",
+    // })
 
     return(
-        <main>
-          <Head>
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet" />
-          </Head>
-          
+        <main >
             <HamburgerMenu />
 
             
