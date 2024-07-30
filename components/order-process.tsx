@@ -11,7 +11,7 @@ interface Step {
 const steps: Step[] = [
   { 
     icon: '💬', 
-    title: 'Paso 1: Cotización', 
+    title: '💬 Paso 1: Cotización', 
     content: `
       <p className='pt-4'>Checa nuestro catálogo y contáctanos por medio de los botones de WhatsApp o email en la página de nuestros productos. 
       Te cotizaremos tu pedido, sin compromiso.</p>
@@ -24,7 +24,7 @@ const steps: Step[] = [
       </ul>
     `
   },
-  { icon: '💲', title: 'Paso 2: Primer Pago', content:  `
+  { icon: '💲', title: '💲 Paso 2: Primer Pago', content:  `
     <p>Se realiza el pago del 50% del total del pedido.</p>
     <p>Necesitaremos estos documentos para empezar la producción:</p>
     <ul>
@@ -34,15 +34,15 @@ const steps: Step[] = [
       <li>🔵 Dependiendo del pedido, necesitaremos más datos al respecto. Este es un lugar ideal para que puedas detallar completamente cualquier aspecto que desees sobre tu pedido. Queremos personalizar tu solicitud para asegurarnos de que los productos se caractericen de la mejor manera posible. </li>
     </ul>
   ` },
-  { icon: '🧑🏽‍🎨', title: 'Paso 3: Producción del pedido', content:
-     '<p>Una vez recibidos los datos que nos proporcionaste y efectuado el primer pago del 50% del total del pedido, procederemos a iniciar la fabricación de tus productos.</p> <p>Durante este proceso, te mantendremos informado con actualizaciones y fotografías del avance de la producción.</p> Además, estaremos atentos para responder cualquier pregunta adicional que puedas tener, comunicándonos a través del medio que hayas seleccionado (ya sea WhatsApp o correo electrónico). Mantente al tanto de nuestras comunicaciones para recibir información puntual..</p>' },
-  { icon: '📦', title: 'Paso 4: Entregas Locales', content:   `
+  { icon: '🧑🏽‍🎨', title: '🧑🏽‍🎨 Paso 3: Producción del pedido', content:
+     '<p>Una vez recibidos los datos que nos proporcionaste y efectuado el primer pago del 50% del total del pedido, procederemos a iniciar la fabricación de tus productos.</p> <p>Durante este proceso, te mantendremos informado con actualizaciones y fotografías del avance de la producción.</p> Además, estaremos atentos para responder cualquier pregunta adicional que puedas tener, comunicándonos a través del medio que hayas seleccionado (ya sea WhatsApp o correo electrónico). Mantente al tanto de nuestras comunicaciones para recibir información puntual.</p>' },
+  { icon: '📦', title: '📦 Paso 4: Entregas Locales', content:   `
     <p>Por el momento, sólo hacemos entregas locales en Nuevo León en los siguientes municipios: Monterrey, San Pedro, San Nicolás, Guadalupe y Apodaca.</p>
     <p>Una vez finalizado el pedido, le pediremos acordar día, hora y lugar específico de entrega.</p>
     <p>También, le pediremos el nombre completo de la persona o personas quienes recibirán el pedido. No se entregarán pedidos a terceras personas fuera del acuerdo.</p>
     <p>Antes de poder recibir el pedido deberá pagar el 50% restante del total del pedido. No se le entregará el pedido si no ha liquidado el pago.</p>
   ` },
-  { icon: '⭐', title: 'Paso 5: Evalúanos', content:   `
+  { icon: '⭐', title: '⭐Paso 5: Evalúanos', content:   `
     <p >En Macanazos, nos dedicamos apasionadamente a capturar momentos especiales a través de caricaturas personalizadas.</p>
     <p>Valoramos sinceramente tu opinión y tu experiencia con nosotros. Una vez que recibas tu caricatura personalizada y estés encantado con el resultado, te invitamos a compartir tu experiencia en <a class="link-review" href="https://g.page/r/CYhAC8pPsNGuEBM/review"> nuestra página de Google Maps haciendo click aquí.</a> Tu reseña no solo nos ayuda a crecer y mejorar, sino que también orienta a otros en la comunidad que buscan un servicio personalizado y memorable para sus eventos especiales.</p>
     <p>Estamos emocionados de ser parte de tus momentos más significativos y esperamos que disfrutes cada detalle de nuestras creaciones artísticas. ¡Gracias por elegir a Macanazos para dar vida a tus recuerdos de una manera única y especial!</p>
