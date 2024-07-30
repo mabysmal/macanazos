@@ -5,7 +5,7 @@ import yaml from "js-yaml";
 import Image from "next/image";
 import Carrousel from '@/components/carrousel';
 import HamburgerMenu from '@/components/hamburger-menu';
-import FooterMacanazos from "@/components/footerMacanazos";
+import FooterMacanazos from "@/components/footerMacanazos"; //imports
 
 // import ('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
